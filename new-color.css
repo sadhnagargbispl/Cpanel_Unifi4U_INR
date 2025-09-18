@@ -1,0 +1,213 @@
+body {
+    background: #000;
+    margin: revert !important;
+    /* background-image: url(https://wallpaperaccess.com/full/222783.jpg) !important; */
+    /*background-image: url(https://64.media.tumblr.com/6518518ac7383404c77f612094a74d9f/tumblr_omo9spZrI41vsjcxvo1_540.gifv) !important;*/
+	/*background-image: url(https://i.giphy.com/970Sr8vpwEbXG.webp) !important ;*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment :fixed;
+}
+
+.login100-form {
+    margin: 0 !important;
+}
+
+.container-login100 {
+    background: #313f4700 !important;
+}
+.wrap-login100 {
+    backdrop-filter: blur(3px) !important;
+    padding: 50px !important;
+    background: #ffffff7a !important;
+}
+.login100-form-btn{
+	border : none !important;
+}
+
+
+.darkmode #content {
+    background-image: unset !important;
+	background: #000;
+    backdrop-filter: blur(1px);
+    background-size: cover;
+    background-position: right;
+}
+.darkmode .sidebar-theme {
+    border: 1px solid #ccc;
+    background: #08273a !important;
+    backdrop-filter: blur(20px);
+}
+#sidebar ul.menu-categories li.menu > .dropdown-toggle[data-active="true"] {
+    background-image: linear-gradient(to right, #075899, #075899) !important;
+}
+#sidebar ul.menu-categories li.menu > .dropdown-toggle:hover, #sidebar ul.menu-categories li.menu > .dropdown-toggle.dropdown-toggle:not([data-active="true"]):not([aria-expanded="true"]):hover {
+    background-image: linear-gradient(to right, #075899, #075899) !important;
+}
+
+.main-container {
+    /* background-image: url(https://wallpaperaccess.com/full/222783.jpg) !important; */
+/* background-image : url(https://64.media.tumblr.com/6518518ac7383404c77f612094a74d9f/tumblr_omo9spZrI41vsjcxvo1_540.gifv) !important; */
+    /* background-size: cover !important; */
+    background: #000000 !important;
+}
+.darkmode .widget {
+    box-shadow: none !important;
+    background: #4d4d4d00 !important;
+}
+
+.background-image-section {
+    /*background-image: url(https://64.media.tumblr.com/6518518ac7383404c77f612094a74d9f/tumblr_omo9spZrI41vsjcxvo1_540.gifv) !important;*/
+    background-image: url(https://i.giphy.com/970Sr8vpwEbXG.webp) !important;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+.darkmode .header-container {
+    border: 1px solid #ccc;
+    border-bottom: 1px solid #ffffff;
+    background: #08273a !important;
+    backdrop-filter: blur(20px);
+}
+.sub-header-container, .darkmode .sub-header-container .navbar {
+    background: none !important	;
+}
+.btn-warning {
+    color: #fff !important;
+    background-color: #0a2739;
+    border-color: #0a2739;
+}
+.darkmode .sub-header-container .navbar {
+    border-bottom: none;
+}
+.header-container .navbar .navbar-item .nav-item.dropdown .dropdown-menu {
+    background: #08273a !important;
+    backdrop-filter: blur(20px);
+    border: 1px solid #ccc;
+}
+.navbar .navbar-item .nav-drop .inner .nav-drop-header {
+    background: #ffffff !important;
+}
+.darkmode .text-primary {
+    color: #0a2739 !important;
+}
+.nav-drop .media .las,
+.nav-drop .media-content h6{
+color : #fff;
+}
+
+.nav-drop .media:hover.las,
+.nav-drop .media-content:hover h6{
+color : #4397ca !important;
+}
+
+.darkmode .quick-links-btn {
+    background-color: #ffffff;
+    color: #0a2739 !important;
+}
+.darkmode .donation-content-wrapper {
+    background-color: #00000000;
+}
+#content{
+	margin-top : 75px !important;
+}
+span.quick-category-icon{
+	display : none !important;
+}
+.quick-category-content a {
+    color: #ffffff !important;
+}
+.btn-danger {
+    color: #1b87c9 !important;
+}
+
+.darkmode .table-bordered th {
+    border: 1px solid #ffffff !important;
+}
+
+.darkmode .table-bordered td {
+    border: 1px solid #ffffff !important;
+}
+
+@media only screen and (max-width : 767px){
+.background-image-section{
+    background-position: bottom !important;
+    background-repeat: no-repeat !important;
+}
+
+
+}
+
+.darkmode .card{
+   background-color : #000 !important;
+   border : none !important;
+}
+
+
+.darkmode .sidebar-theme {
+    border: 1px solid #ccc;
+    background: #08273a !important;
+    backdrop-filter: blur(20px);
+    margin-top:84px !important;
+}
+
+
+
+@media only screen and (max-width : 767px){
+    .darkmode .sidebar-theme {
+        margin-top: 85px !important;
+        border-right: solid;
+        border-width: 2px;
+    }   
+
+    .darkmode .sidebar-theme {
+        border: 0px !important;
+    }
+
+    .header-container {
+        padding-left: 0px;
+        left: 0px !important;
+    }
+
+
+
+    }
+
+
+	.main-content {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.stars, .stars2, .stars3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat;
+    background-size: cover;
+    pointer-events: none;
+    z-index: 9999999 !important;
+}
+
+.stars {
+    background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+    animation: moveStars 50s linear infinite;
+}
+
+.stars2 {
+    background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+    animation: moveStars 100s linear infinite;
+}
+
+.stars3 {
+    background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+    animation: moveStars 150s linear infinite;
+}
+
+@keyframes moveStars {
+    from { transform: translateY(0); }
+    to { transform: translateY(-1000px); }
+}

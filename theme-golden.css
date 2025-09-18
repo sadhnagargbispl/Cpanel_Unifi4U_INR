@@ -1,0 +1,108 @@
+    .main-container {
+        background: #04507c;
+    }
+
+    .darkmode .header-container {
+        border-bottom: 1px solid #04507c;
+        background: #04507c;
+    }
+
+    .darkmode #content {
+        background: #04507c;
+    }
+
+    .darkmode .sidebar-theme {
+        background: #04507c;
+    }
+
+    #sidebar ul.menu-categories li.menu>.dropdown-toggle[data-active="true"] {
+        background-image: linear-gradient(to right, rgb(6 6 6 / 20%), rgb(0 0 0 / 20%)) !important;
+    }
+
+    #sidebar ul.menu-categories li.menu>.dropdown-toggle[data-active="true"] {
+
+        background-image: linear-gradient(to right, #02a8d8, #02a8d8) !important;
+    }
+
+.sub-header-container {
+    background: #0187cb;
+}
+
+.darkmode .sub-header-container .navbar {
+    background: #0187cb;
+    border-bottom: 1px solid #02a8d8;
+}
+
+    .layout-px-spacing {
+        padding: 20px 20px 0 18px !important;
+    }
+
+    .darkmode .widget {
+        background: #12236e !important;
+    }
+
+    .qc-secondary,
+    .qc-success-teal,
+    .qc-primary,
+    .qc-warning {
+        background: #02a8d8;
+        color: #ffffff;
+    }
+
+    .darkmode .text-primary,
+    .darkmode p {
+        color: #fff !important;
+    }
+
+    .darkmode .donation-content-wrapper {
+        background-color: #04507c;
+    }
+
+    .donation-content-wrapper .d-sub-heading {
+        color: #fff;
+    }
+
+.darkmode .quick-links-btn {
+    background-color: #0187cb;
+}
+
+    #sidebar ul.menu-categories li.menu>.dropdown-toggle:hover,
+    #sidebar ul.menu-categories li.menu>.dropdown-toggle.dropdown-toggle:not([data-active="true"]):not([aria-expanded="true"]):hover {
+        background-image: linear-gradient(to right, #02a8d8, #02a8d8);
+    }
+
+    .header-container .navbar .navbar-item .nav-item.dropdown .dropdown-menu {
+        background: #02a8d8;
+    }
+
+    .navbar .navbar-item .nav-drop .inner .nav-drop-header {
+        background: #04507c;
+    }
+
+    .nav-drop-header span {
+        color: #fff;
+    }
+
+    .darkmode .dropdown-menu h6 {
+        color: #ffffff;
+    }
+
+    .nav-drop-body .las {
+        color: #fff;
+    }
+
+    .navbar .navbar-item a.account-item:hover {
+        background: #04507c;
+    }
+
+    .progress {
+        background-color: #f95c05;
+    }
+
+    .progress-bar-striped {
+        background-image: linear-gradient(45deg, #f95c05 25%, #f95c05 25%, #f95c05 50%, #f95c05 50%, #f95c05 75%, #f95c05 75%, #f95c05);
+    }
+
+    .login100-form-btn {
+        background: #02a8d8;
+    }

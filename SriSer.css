@@ -1,0 +1,54 @@
+body {
+    background-color: #ecf0fa !important;
+    background-image: url(https://img.freepik.com/free-photo/black-smooth-textured-paper-background_53876-124453.jpg);
+    background-repeat: no-repeat;    
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+}
+.gen-profile-box {
+    background: #fff !important;
+    border: 1px solid #121212 !important;
+    border-radius : 10px !important;
+    border-top-right-radius: 10px !important;
+    border-top-left-radius: 10px !important;
+    box-shadow: 3px 3px 2px #12121245 !important;
+}
+[data-navbar="light"] .navbar.navbar-1 {
+    background: #ecf0fa !important;
+}
+.red-border {
+    border-color: #121212 !important;
+}
+input#ctl00_ContentPlaceHolder1_btncopy {
+    background: #2aa288 !important;
+    border: 1px solid #2aa288 !important;
+}
+.blue-border {
+    border-color: #121212  !important;
+}
+
+#cssmenu {
+    background: #121212 !important;
+}
+
+.profile-bar-simple h6{
+    color : #121212  !important;
+}
+.user-profile-pic img{
+    border-color: #2aa288 !important;
+}
+#cssmenu ul ul li a {
+    background: #121212  !important;
+}
+#cssmenu {
+    background: #121212 !important;
+}
+input[type="button"], input[type="submit"] {
+    background-color: #121212 !important;
+    border-left-color: #121212 !important;
+    border-right-color: #121212 !important;
+    border-top-color: #121212 !important;
+    border-bottom-color: #121212 !important;
+}

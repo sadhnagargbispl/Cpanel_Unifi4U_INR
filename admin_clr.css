@@ -1,0 +1,28 @@
+[data-navbar="light"] .navbar.navbar-1 {
+    background: #007ba4 !important;
+}
+
+
+#cssmenu {
+    background: #c68a3d !important;
+}
+
+
+body {
+    background-color: #ecf0fa !important;
+    background-image: url(https://img.freepik.com/free-vector/modern-abstract-white-minimal-background_84443-8318.jpg) !important;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+}
+
+
+.profile-bar-simple h6 {
+    color: #007ca1 !important;
+}
+
+.red-border {
+    border-color: #ca8949 !important;
+}

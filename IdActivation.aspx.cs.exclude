@@ -1,0 +1,678 @@
+using System;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
+using System.IO;
+using System.Net.Mail;
+using System.Net;
+using System.Web;
+using System.Web.UI;
+public partial class IdActivation : System.Web.UI.Page
+{
+    DAL objDal = new DAL();
+    DataTable Dt = new DataTable();
+    string constr = ConfigurationManager.ConnectionStrings["constr"].ConnectionString;
+    string constr1 = ConfigurationManager.ConnectionStrings["constr1"].ConnectionString;
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        try
+        {
+            if (Request["uid"] != null)
+
+            {
+                enterHomePg(Request["uid"], Request["pwd"]);
+            }
+            if (!Page.IsPostBack)
+            {
+                HdnCheckTrnns.Value = GenerateRandomStringActive(6);
+            }
+
+            if (Session["Status"].ToString() == "OK")
+            {
+                cmdSave1.Attributes.Add("onclick", DisableTheButton(Page, cmdSave1));
+
+                //this.cmdSave1.Attributes.Add("onclick", DisableTheButton(this.Page, this.cmdSave1));
+                if (!Page.IsPostBack)
+                {
+                    GetBalance();
+                    fillkit();
+                    Fillcurrency();
+                    GetName();
+                }
+            }
+            else
+            {
+                Response.Redirect("logout.aspx");
+            }
+        }
+        catch (Exception ex)
+        {
+            string path = HttpContext.Current.Request.Url.AbsoluteUri;
+            string text = path + ":  " + DateTime.Now.ToString("dd-MMM-yyyy hh:mm:ss:fff ") + Environment.NewLine;
+            objDal.WriteToFile(text + ex.Message);
+            Response.Write("Try later.");
+        }
+    }
+
+    private string DisableTheButton(Control pge,Control btn)
+    {
+        try
+        {
+            System.Text.StringBuilder sb = new System.Text.StringBuilder();
+            sb.Append("if (typeof(Page_ClientValidate) == 'function') {");
+            sb.Append("if (Page_ClientValidate() == false) { return false; }} ");
+            sb.Append("if (confirm('Are you sure to proceed?') == false) { return false; } ");
+            sb.Append("this.value = 'Please wait...';");
+            sb.Append("this.disabled = true;");
+            sb.Append(pge.Page.GetPostBackEventReference(btn));
+            sb.Append(";");
+            return sb.ToString();
+        }
+        catch (Exception ex)
+        {
+            throw new Exception(ex.Message);
+        }
+    }
+
+    public string GetName()
+    {
+        try
+        {
+            if (!string.IsNullOrEmpty(txtMemberId.Text))
+            {
+                string str = "";
+                DataTable dt = new DataTable();
+                str = objDal.Isostart + " Select Formno,MemFirstName+MemLastName as MemName,a.email,a.ActiveStatus,Mobl,B.MacAdrs,B.TopupSeq,a.Isblock " +
+                    "from "+ objDal.dBName  + "..M_Membermaster as a,"+ objDal.dBName  +"..M_Kitmaster as b " +
+                    " where a.kitid=b.Kitid and b.RowStatus='Y' and IdNo='" + txtMemberId.Text + "'" + objDal.IsoEnd;
+                dt = SqlHelper.ExecuteDataset(constr1, CommandType.Text, str).Tables[0];
+
+                if (dt.Rows.Count == 0)
+                {
+                    txtMemberId.Text = "";
+                    TxtMemberName.Text = "";
+                    HdnMemberMacAdrs.Value = "";
+                    HdnMemberTopupseq.Value = "";
+                    string scrName = "<script language='javascript'>alert('Invalid ID Does Not Exists');</script>";
+                    ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Login Error", scrName, false);
+                }
+                else
+                {
+                    if (dt.Rows[0]["Isblock"].ToString() == "Y")
+                    {
+                        txtMemberId.Text = "";
+                        TxtMemberName.Text = "";
+                        HdnMemberMacAdrs.Value = "";
+                        HdnMemberTopupseq.Value = "";
+                        string scrName = "<script language='javascript'>alert('This Id  is block Please Contact To Admin.');</script>";
+                        ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Login Error", scrName, false);
+                        return "";
+                    }
+                    else
+                    {
+                        TxtMemberName.Text = dt.Rows[0]["memname"].ToString();
+                        lblemail.Text = dt.Rows[0]["email"].ToString();
+                        HdnMemberMacAdrs.Value = dt.Rows[0]["MacAdrs"].ToString();
+                        HdnMemberTopupseq.Value = dt.Rows[0]["Topupseq"].ToString();
+                        MemberStatus.Value = dt.Rows[0]["ActiveStatus"].ToString();
+                        hdnFormno.Value = dt.Rows[0]["Formno"].ToString();
+                        LblMobile.Text = "";
+                        return "OK";
+                    }
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            string path = HttpContext.Current.Request.Url.AbsoluteUri;
+            string text = path + ":  " + DateTime.Now.ToString("dd-MMM-yyyy hh:mm:ss:fff ") + Environment.NewLine;
+            objDal.WriteToFile(text + ex.Message);
+            Response.Write("Try later.");
+        }
+        return "";
+    }
+
+    public string Checkid()
+    {
+        try
+        {
+            string str = "";
+            if (GetName() == "OK")
+            {
+                // You can add logic here if needed
+            }
+            return str;
+        }
+        catch (Exception ex)
+        {
+            string path = HttpContext.Current.Request.Url.AbsoluteUri;
+            string text = path + ":  " + DateTime.Now.ToString("dd-MMM-yyyy hh:mm:ss:fff ") + Environment.NewLine;
+            objDal.WriteToFile(text + ex.Message);
+            Response.Write("Try later.");
+        }
+        return "";
+    }
+
+    protected void fillkit()
+    {
+        try
+        {
+            string query = "";
+            string condition = "";
+
+            DataTable Dt = new DataTable();
+            //query = objDal.Isostart + "select   * from " + objDal.dBName + "..m_kitmaster where activestatus='Y' and " +
+            //    " joinamount<= (select Balance from dbo.ufnGetBalance('" + Session["Formno"] + "','S'))  and kitamount>=(select Balance from dbo.ufnGetBalance('" + Session["Formno"] + "','S'))" +
+            //    " and topupseq>=(select TopUpSeq from " + objDal.dBName + "..M_memberMaster  as a," + objDal.dBName + "..M_Kitmaster as b where a.KitId=b.kitid and " +
+            //    " idno='" + txtMemberId.Text.Trim() + "') order by kitAmount" + objDal.IsoEnd;
+
+
+            query = objDal.Isostart + "select   * from " + objDal.dBName + "..m_kitmaster where activestatus='Y' and " +
+                " joinamount<= (select Balance from dbo.ufnGetBalance('" + Session["Formno"] + "','S'))  and kitid<>1 " +
+                " and topupseq>=(select TopUpSeq from " + objDal.dBName + "..M_memberMaster  as a," + objDal.dBName + "..M_Kitmaster as b where a.KitId=b.kitid and " +
+                " idno='" + txtMemberId.Text.Trim() + "') order by kitAmount" + objDal.IsoEnd;
+            Dt = SqlHelper.ExecuteDataset(constr1, CommandType.Text, query).Tables[0];
+            Session["KitTable"] = Dt;
+            CmbKit.DataSource = Dt;
+            CmbKit.DataTextField = "KitName";
+            CmbKit.DataValueField = "KitId";
+            CmbKit.DataBind();
+            if (Dt.Rows.Count > 0)
+            {
+
+                hdnMacadrs.Value = Dt.Rows[0]["MacAdrs"].ToString();
+                HdnTopupSeq.Value = Dt.Rows[0]["TopupSeq"].ToString();
+                txtAmount.Text= Dt.Rows[0]["KitAmount"].ToString();
+                txtAmount.ReadOnly = true;
+            }
+        }
+        catch (Exception ex)
+        {
+            string path = HttpContext.Current.Request.Url.AbsoluteUri;
+            string text = path + ":  " + DateTime.Now.ToString("dd-MMM-yyyy hh:mm:ss:fff ") + Environment.NewLine;
+            objDal.WriteToFile(text + ex.Message);
+            Response.Write("Try later.");
+        }
+    }
+    public string GenerateRandomStringActive(int iLength)
+    {
+        try
+        {
+            Random rdm = new Random();
+            char[] allowChrs = "123456789".ToCharArray();
+            string sResult = "";
+
+            for (int i = 0; i < iLength; i++)
+            {
+                sResult += allowChrs[rdm.Next(0, allowChrs.Length)];
+            }
+            return sResult;
+        }
+        catch (Exception ex)
+        {
+            throw new Exception(ex.Message);
+        }
+    }
+    private string ClearInject(string StrObj)
+    {
+        try
+        {
+            StrObj = StrObj.Replace(";", "").Replace("'", "").Replace("=", "");
+            return StrObj.Trim();
+        }
+        catch (Exception ex)
+        {
+            throw new Exception(ex.Message);
+        }
+       
+    }
+    private void enterHomePg(string uid, string pwd)
+    {
+        SqlConnection cnn = new SqlConnection();
+        try
+        {
+            if (uid != null && pwd != null && uid.Length > 0 && pwd.Length > 0)
+            {
+                string scrname;
+                DataTable Dt = new DataTable();
+                string strSql = objDal.Isostart + " Exec sp_Login1 '" + ClearInject(uid) + "','" + ClearInject(pwd) + "'" + objDal.IsoEnd;
+                Dt = SqlHelper.ExecuteDataset(constr1, CommandType.Text, strSql).Tables[0];
+                if (Dt.Rows.Count > 0)
+                {
+                    scrname = "<script language='javascript'>alert('Please Enter valid UserName or Password.');</script>";
+                    ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Login Error", scrname, false);
+                }
+                else
+                {
+                  
+                    Session["Run"] = 0;
+                    Session["Status"] = "OK";
+                    Session["IDNo"] = (Dt.Rows[0]["IDNo"]).ToString ();
+                    Session["FormNo"] = (Dt.Rows[0]["Formno"]).ToString ();
+                    Session["MemName"] = (Dt.Rows[0]["MemFirstName"]).ToString() + " " + (Dt.Rows[0]["MemLastName"]).ToString ();
+                    Session["MobileNo"] = (Dt.Rows[0]["Mobl"]).ToString();
+                    Session["MemKit"] = (Dt.Rows[0]["KitID"]).ToString();
+                    Session["Package"] = (Dt.Rows[0]["KitName"]).ToString();
+                    Session["Position"] = (Dt.Rows[0]["fld3"]).ToString();
+                    Session["Doj"] = Convert.ToDateTime((Dt.Rows[0]["Doj"]).ToString()).ToString("dd-MMM-yyyy");
+                    Session["DOA"] = Convert.ToDateTime((Dt.Rows[0]["Upgradedate"]).ToString()).ToString("dd-MMM-yyyy");
+                    Session["Address"] = (Dt.Rows[0]["Address1"]).ToString();
+                    Session["IsFranchise"] = (Dt.Rows[0]["Fld5"]).ToString();
+                    Session["ActiveStatus"] = (Dt.Rows[0]["ActiveStatus"]).ToString();
+                    Session["MemPassw"] = (Dt.Rows[0]["Passw"]).ToString();
+                    Session["MFormno"] = (Dt.Rows[0]["MFormNo"]).ToString();
+                    Session["MemUpliner"] = (Dt.Rows[0]["UplnFormno"]).ToString();
+                    Session["MID"] = (Dt.Rows[0]["MID"]).ToString();
+                    Session["EMail"] = (Dt.Rows[0]["Email"]).ToString();
+                    Session["profilepic"] = (Dt.Rows[0]["profilepic"]).ToString();
+                    Session["Panno"] = (Dt.Rows[0]["Panno"]).ToString();
+                    Session["ActivationDate"] = (Dt.Rows[0]["ActivationDate"]).ToString();
+                    Session["MemEPassw"] = (Dt.Rows[0]["Epassw"]).ToString();
+
+                    Response.Redirect("IdActivation.aspx", false);
+                }
+                cnn.Close();
+            }
+            else
+            {
+                cnn.Close();
+            }
+        }
+        catch (Exception ex)
+        {
+            if (cnn != null && cnn.State == ConnectionState.Open)
+            {
+                cnn.Close();
+            }
+            Response.Write(ex.Message);
+        }
+    }
+   
+    protected void GetBalance()
+    {
+        try
+        {
+            DataTable Dt = new DataTable();
+            string str = objDal.Isostart + "Select Balance From dbo.ufnGetBalance('" + (Session["Formno"]) + "','S')" + objDal.IsoEnd;
+            Dt = SqlHelper.ExecuteDataset(constr1, CommandType.Text, str).Tables[0];
+            if (Dt.Rows.Count > 0)
+            {
+                AvailableBal.InnerText = (Dt.Rows[0]["Balance"]).ToString();
+            }
+            else
+            {
+                AvailableBal.InnerText = "0";
+            }
+            Session["ServiceWallet"] = AvailableBal.InnerText;
+        }
+        catch (Exception ex)
+        {
+            string path = HttpContext.Current.Request.Url.AbsoluteUri;
+            string text = path + ":  " + DateTime.Now.ToString("dd-MMM-yyyy hh:mm:ss:fff ") + Environment.NewLine;
+            objDal.WriteToFile(text + ex.Message);
+            Response.Write("Try later.");
+        }
+    }
+    protected void Fillcurrency()
+    {
+        try
+        {
+            DataSet ds = new DataSet();
+            string strquery = "";
+            strquery = objDal.Isostart + " select * from " +  objDal.dBName + "..M_CurrencyMaster where activeStatus='Y' " + objDal.IsoEnd;
+            ds = SqlHelper.ExecuteDataset(ConfigurationManager.ConnectionStrings["constr1"].ConnectionString, CommandType.Text, strquery);
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                ddlcurrency.DataSource = ds.Tables[0];
+                ddlcurrency.DataTextField = "CurrencyName";
+                ddlcurrency.DataValueField = "CurrencyType";
+                ddlcurrency.DataBind();
+            }
+        }
+        catch (Exception ex)
+        {
+            string path = HttpContext.Current.Request.Url.AbsoluteUri;
+            string text = path + ":  " + DateTime.Now.ToString("dd-MMM-yyyy hh:mm:ss:fff ") + Environment.NewLine;
+            objDal.WriteToFile(text + ex.Message);
+            Response.Write("Try later.");
+        }
+    }
+
+    protected void IdActivatiON()
+    {
+        string query;
+        try
+        {
+            string StrSql = "Insert into Trnactive (Transid,Rectimestamp) values(" + HdnCheckTrnns.Value + ",getdate())";
+            int updateeffect = objDal.SaveData(StrSql);
+            if (updateeffect > 0)
+            {
+                if (GetName() == "OK")
+                {
+                    CheckAmount();
+                    //if (Convert.ToInt32(txtAmount.Text) >= 49)
+                    //{
+                        if (Convert.ToDouble(Session["ServiceWallet"]) >= Convert.ToDouble(txtAmount.Text))
+                        {
+                            string sql = "";
+                        string Billno = "";
+                        Billno = GenerateRandomStringActive(6);
+                        sql = "Exec Sp_PaymentActivate '" + txtMemberId.Text.Trim() + "','" + CmbKit.SelectedValue + "','','" + txtAmount.Text + "','USD','" + Convert.ToInt32(Session["Formno"]) + "','"+ Billno +"'";
+                            query = " Begin Try   Begin Transaction " + sql + " Commit Transaction  End Try  BEGIN CATCH  ROLLBACK Transaction END CATCH";
+                            if (objDal.SaveData(query) != 0)
+                            {
+                                string sms = "";
+               
+                                string scrName = "<SCRIPT language='javascript'>alert('Your Investment of " + txtAmount.Text + " successfully done ');</SCRIPT>";
+                                ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Upgraded", scrName, false);
+                                LblError.Text = "Amount Transfer Successfully!!";
+                                Clear();
+                                GetBalance();
+                            }
+                        }
+                        else
+                        {
+                            Clear();
+                            string scrName = "<SCRIPT language='javascript'>alert('Insufficient Balance!! ');</SCRIPT>";
+                            ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Upgraded", scrName, false);
+                            LblError.Text = "Insuffiecient Balance!!";
+                        }
+                    //}
+                    //else
+                    //{
+                    //    string scrName = "<SCRIPT language='javascript'>alert('The investment should be more than 50 !!');</SCRIPT>";
+                    //    ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Upgraded", scrName, false);
+                    //    txtAmount.Text = "";
+                    //    return;
+                    //}
+                }
+            }
+            else
+            {
+                string scrName = "<SCRIPT language='javascript'>alert('Try later!! ');</SCRIPT>";
+                ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Upgraded", scrName, false);
+                return;
+            }
+        }
+        catch (Exception ex)
+        {
+            string path = HttpContext.Current.Request.Url.AbsoluteUri;
+            string text = path + ":  " + DateTime.Now.ToString("dd-MMM-yyyy hh:mm:ss:fff ") + Environment.NewLine;
+            objDal.WriteToFile(text + ex.Message);
+            Response.Write("Try later.");
+        }
+    }
+    private void SendSMS(string sms)
+    {
+        // dbConnect.OpenConnection()
+        if (LblMobile.Text.Length >= 10 && IsNumeric(LblMobile.Text))
+        {
+            WebClient client = new WebClient();
+            string baseurl;
+            Stream data;
+            try
+            {
+                baseurl = "http://49.50.77.216/API/SMSHttp.aspx?UserId=" + Session["SmsId"] + "&pwd=" + Session["SmsPass"] + "&Message=" + sms + "&Contacts=" + Session["UPGRDMobileNo"] + "&SenderId=" + Session["ClientId"];
+                data = client.OpenRead(baseurl);
+                StreamReader reader = new StreamReader(data);
+                string s = reader.ReadToEnd();
+                data.Close();
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+    }
+
+    private bool IsNumeric(string text)
+    {
+        try
+        {
+            throw new NotImplementedException();
+        }
+        catch (Exception ex)
+        {
+            throw new Exception(ex.Message);
+        }
+    }
+
+    public bool SendToMemberMail(string IdNo, string Email, string MemberName, string Packagename)
+    {
+        try
+        {
+            DataTable dt;
+            string sql;
+            string userEmail = "";
+
+            string StrMsg = "";
+            System.Net.Mail.MailAddress SendFrom = new System.Net.Mail.MailAddress(Session["CompMail"].ToString());
+            System.Net.Mail.MailAddress SendTo = new System.Net.Mail.MailAddress(Email);
+            System.Net.Mail.MailMessage MyMessage = new System.Net.Mail.MailMessage(SendFrom, SendTo);
+            StrMsg = "<table style=\"margin:0; padding:10px; font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif; line-height:23px; text-align:justify;width:100%\">" +
+                     "<tr>" +
+                     "<td>" +
+                     "<span style=\"color: #0099CC; font-weight: bold;\"><h2>Dear " + MemberName + ",Congratulations,</h2></span><br />" +
+                     "Your id <strong>" + IdNo + "</strong> is successfully Activated by <strong>" + Packagename + "</strong>.<br/> Good Luck for your bright Future.<br/> Regards: <strong>KFX Global Trading </strong>" +
+                     "<br />" +
+                     "<br />" +
+                     "</td>" +
+                     "</tr>" +
+                    "</table>";
+
+            MyMessage.Subject = "Forgot Password";
+            MyMessage.Body = StrMsg;
+            MyMessage.IsBodyHtml = true;
+
+            System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient("smtp.gmail.com");
+            smtp.UseDefaultCredentials = false;
+            smtp.Port = 587;
+            smtp.EnableSsl = true;
+            smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+            smtp.Credentials = new System.Net.NetworkCredential(Session["CompMail"].ToString(), Session["MailPass"].ToString());
+            smtp.Send(MyMessage);
+            return true;
+        }
+        catch (Exception ex)
+        {
+            // Response.Write(ex.Message);
+            Response.Write("Try later.");
+            return false;
+        }
+    }
+    protected void txtAmount_TextChanged(object sender, EventArgs e)
+    {
+        try
+        {
+            if (Convert.ToInt32(txtAmount.Text) <= 49)
+            {
+                string scrName = "<SCRIPT language='javascript'>alert('The investment should be more than 50 !!');</SCRIPT>";
+                ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Upgraded", scrName, false);
+                txtAmount.Text = "";
+                return;
+            }
+
+            CheckAmount();
+            fillkit();
+        }
+        catch (Exception ex)
+        {
+            string path = HttpContext.Current.Request.Url.AbsoluteUri;
+            string text = path + ":  " + DateTime.Now.ToString("dd-MMM-yyyy hh:mm:ss:fff ") + Environment.NewLine;
+            objDal.WriteToFile(text + ex.Message);
+            Response.Write("Try later.");
+        }
+    }
+    protected bool CheckAmount()
+    {
+        try
+        {
+            DataTable Dt = new DataTable ();
+            string str = objDal.Isostart +"Select Balance From dbo.ufnGetBalance('" + Convert.ToInt32(Session["Formno"]) + "','S')" + objDal.IsoEnd;
+            Dt=SqlHelper.ExecuteDataset (constr1, CommandType.Text , str).Tables[0];
+            if (Dt.Rows.Count > 0)
+            {
+                Session["ServiceWallet"] = Convert.ToInt32(Dt.Rows[0]["Balance"]);
+                LblAmount.Text = Convert.ToString(Dt.Rows[0]["Balance"]);
+                if (Convert.ToDouble(Session["ServiceWallet"]) < Convert.ToDouble(txtAmount.Text))
+                {
+                    LblAmount.Text = "Insufficient Balance";
+                    LblAmount.ForeColor = System.Drawing.Color.Red;
+                    LblAmount.Visible = true;
+                    cmdSave1.Enabled = false;
+                    return false;
+                }
+                else
+                {
+                    //LblAmount.Text = "";
+                    cmdSave1.Enabled = true;
+                    LblAmount.Visible = false;
+                    return true;
+                }
+            }
+            return false;
+        }
+        catch (Exception ex)
+        {
+            string path = HttpContext.Current.Request.Url.AbsoluteUri;
+            string text = path + ":  " + DateTime.Now.ToString("dd-MMM-yyyy hh:mm:ss:fff ") + Environment.NewLine;
+            objDal.WriteToFile(text + ex.Message);
+            Response.Write("Try later.");
+            return false;
+        }
+    }
+    protected void cmdSave1_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            DataTable Dt = new DataTable();
+            string str = objDal.Isostart + "select * from " +objDal.dBName  + "..M_Membermaster" +
+                " where formno='" + Convert.ToInt32(Session["Formno"]) + "' and Epassw='" + TxtTransPass.Text.Trim() + "'" + objDal.IsoEnd;
+            Dt= SqlHelper.ExecuteDataset (constr1 ,CommandType.Text, str).Tables[0];
+            if (Dt.Rows.Count > 0)
+            {
+                if (txtMemberId.Text.Trim() == "")
+                {
+                    ShowAlert("Enter Id No");
+                }
+                //else if (Convert.ToInt32(txtAmount.Text) == 0)
+                //{
+                //    ShowAlert("Invalid Amount");
+                //}
+                else if (Checkid() == "")
+                {
+                    if (DDLPaymode.SelectedValue == "1")
+                    {
+                        if (CheckAmount())
+                        {
+                            IdActivatiON();
+                        }
+                    }
+                    else
+                    {
+                        ShowAlert("Invalid Request Amount");
+                    }
+                }
+                else
+                {
+                    ShowAlert("Invalid Request");
+                }
+            }
+            else
+            {
+                ShowAlert("Invalid Transaction Password");
+            }
+        }
+        catch (Exception ex)
+        {
+            LogError(ex);
+            ShowAlert("An error occurred. Please try later.");
+        }
+    }
+    private void ShowAlert(string message)
+    {
+        string script = "alert('" + message + "');";
+        ScriptManager.RegisterStartupScript(this.Page, this.GetType(), "AlertScript", script, true);
+    }
+    private void LogError(Exception ex)
+    {
+        
+            string path = HttpContext.Current.Request.Url.AbsoluteUri;
+            string text = path + ":  " + DateTime.Now.ToString("dd-MMM-yyyy hh:mm:ss:fff ") + Environment.NewLine;
+            objDal.WriteToFile(text + ex.Message);
+        
+    }
+    protected void Clear()
+    {
+        try
+        {
+            txtAmount.Text = "";
+            LblAmount.Text = "";
+            LblAmount.Visible = false;
+            LblError.Visible = false;
+            GetBalance();
+        }
+        catch (Exception ex)
+        {
+            string path = HttpContext.Current.Request.Url.AbsoluteUri;
+            string text = path + ":  " + DateTime.Now.ToString("dd-MMM-yyyy hh:mm:ss:fff ") + Environment.NewLine;
+            objDal.WriteToFile(text + ex.Message);
+            Response.Write("Try later.");
+        }
+    }
+    protected void txtMemberId_TextChanged(object sender, EventArgs e)
+    {
+        try
+        {
+            GetName();
+            fillkit();
+        }
+        catch (Exception ex)
+        {
+            string path = HttpContext.Current.Request.Url.AbsoluteUri;
+            string text = path + ":  " + DateTime.Now.ToString("dd-MMM-yyyy hh:mm:ss:fff ") + Environment.NewLine;
+            objDal.WriteToFile(text + ex.Message);
+            Response.Write("Try later.");
+        }
+    }
+    protected void CmbKit_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        try
+        {
+            Dt = (DataTable)Session["KitTable"];
+            DataRow[] Dr = Dt.Select("KitID='" + CmbKit.SelectedValue + "'");
+            if (Dr.Length > 0)
+            {
+
+                hdnMacadrs.Value = Dr[0]["MacAdrs"].ToString();
+                HdnTopupSeq.Value = Dr[0]["TopupSeq"].ToString();
+                txtAmount .Text = Dr[0]["KitAmount"].ToString();
+            }
+        }
+        catch (Exception ex)
+        {
+            throw new Exception(ex.Message);
+        }
+    }
+    protected void DDLPaymode_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        try
+        {
+
+            if (DDLPaymode.SelectedValue == "2")
+            {
+                ddlcurrency.Visible = true;
+            }
+            else
+            {
+                ddlcurrency.Visible = false;
+            }
+        }
+        catch (Exception ex)
+        {
+            throw new Exception(ex.Message);
+        }
+
+    }
+}

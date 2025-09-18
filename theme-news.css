@@ -1,0 +1,107 @@
+.main-container {
+    background-image: url(https://i.ytimg.com/vi/yGEOXfRfLAo/maxresdefault.jpg) !important;
+    background-size: cover !important;
+    background: none;
+}
+.darkmode .header-container {
+    border-bottom: 1px solid #000000ab;
+    background: #000000a3;
+}
+.darkmode .sidebar-theme {
+    background: #000000a1;
+}
+.darkmode #content {
+    background: #000000b0;
+}
+.darkmode .sub-header-container .navbar {
+    background: #000000;
+    border-bottom: 1px solid #000000;
+}
+.sub-header-container{
+background: #000000;
+}
+.layout-px-spacing {
+    padding: 20px 20px 0 18px!important;
+}
+.btn-warning {
+    background-color: #000000;
+    border-color: #000000;
+}
+.darkmode .widget {
+    background: #00000094 !important;
+}
+.qc-primary,
+.qc-secondary,
+.qc-warning,
+.qc-success-teal {
+    background: #ffffff;
+    color: #000000;
+}
+.text-warning {
+    color: #ffffff !important;
+}
+.darkmode .text-primary {
+    color: #ffffff !important;
+}
+.darkmode .donation-content-wrapper {
+    background-color: #04506300;
+}
+.header-container .navbar .navbar-item .nav-item.dropdown .dropdown-menu {
+ background: #000000ad;
+}
+.darkmode .dropdown-menu h6 {
+    color: #ffffff;
+}
+.navbar .navbar-item .nav-drop .inner .nav-drop-header {
+    background: #000;
+}
+.nav-drop-body .las{
+color : #fff !important;
+}
+.progress {
+    background-color: #5c5c5c;
+}
+.darkmode .quick-links-btn {
+    background-color: #585858;
+    color: #ffffff !important;
+}
+
+.navbar .navbar-item a.account-item:hover {
+    background: #7f81866e !important;
+    border-radius: 6px !important;
+}
+.btn-warning:hover, .btn-warning:focus {
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+}
+.btn-primary,
+.btn-success,
+.btn-info,
+.btn-danger:hover{
+    color: #fff !important;
+    background-color: #606060!important;
+    border-color: #606060 !important;
+}
+
+.btn-danger {
+    color: #fff !important;
+    background-color: #000000 !important;
+    border-color: #ffffff !important;
+}
+.table,
+.table-dark {
+    background: #d2d2d25c !important;
+}
+.darkmode .table td, .darkmode .table th{
+    border-color: #3a3a3a !important;
+}
+
+
+.darkmode .form-control {
+    margin-bottom: 20px !important;
+    margin-top: 10px !important;
+}
+
+.profile-bar label a {
+    color: #c8c8c8 !important;
+}

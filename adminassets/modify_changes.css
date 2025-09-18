@@ -1,0 +1,96 @@
+
+@media only screen and (max-width: 767px){
+
+   .quick-links-btn {
+      font-size: 11px !important;
+   }
+
+   .main-container {
+      padding: 14px;
+   }
+   .sidebar-closed .layout-px-spacing {
+      padding: 16px 16px !important;
+   }
+.darkmode .quick-links-btn {
+    background: none !important;
+}
+.quick-links-btn {
+    font-size: 10px !important;
+}
+.darkmode .sub-header-container .navbar {
+    border-bottom: none !important;
+}
+.btn-group-sm>.btn, .btn-sm, .btn-group>.btn.btn-sm, .btn-group .btn.btn-sm {
+    font-size: 13px !important;
+}
+.btn {
+    padding: 0.2375rem 0.75rem !important;
+}
+span.quick-category-icon {
+    height: 45px;    
+width: 45px;
+display : block  !important;
+}
+a.widget.quick-category {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    gap: 15px;
+}
+.quick-category-head {
+    margin-bottom: 0px !important;
+}
+.font-17 {
+    font-size: 13px;
+}
+.las, .fa {
+    padding: 2px;
+    text-align: center;
+    font-size: 12px !important;
+}
+.layout-spacing {
+    padding-bottom: 8px;
+}
+.sub-header-container .breadcrumb-one .breadcrumb-item span {
+    font-size: 12px;
+}
+div#ctl00_ContentPlaceHolder2_upChPwd {
+    margin-top: 10px;
+}
+.darkmode .text-primary, .darkmode p {
+    color: #ffffff !important;
+}
+.wrap-login100{
+    width: 100% !important;
+    padding: 20px !important;
+}
+.container-login100{
+    padding: 10px !important;
+    width: unset !important;
+}
+.input100{
+    margin: 0 !important;
+    padding: 0  !important;
+}
+.input100::placeholder{
+    padding-left: 15px !important;
+}
+.footer-wrapper .footer-section p {
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-align: center;
+}
+.darkmode .card{
+	margin-top : 10px !important;
+}
+.submenu ul.submenu-list li a{
+font-size : 12px !important;
+}
+.wtasp-icon{
+padding : 0 !important;
+font-size : 22px !important;
+}
+   .fa-whatsapp{
+font-size : 14px !important;
+}  
+}

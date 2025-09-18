@@ -1,0 +1,97 @@
+.unlock-account.sample-form-4 {
+  position: relative;
+  height: 370px;
+  width: 400px;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+.unlock-account.sample-form-4 form {
+  padding: 0 30px 30px 30px;
+}
+
+.unlock-account.sample-form-4 h3 {
+  padding: 15px 30px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.unlock-account.sample-form-4 p {
+  margin-bottom: 20px;
+}
+
+.unlock-account.sample-form-4 .input-group {
+  margin-bottom: 10px;
+}
+
+.unlock-account.sample-form-4 label {
+  font-weight: 600;
+  font-size: 0.8125rem;
+  margin-bottom: 10px;
+}
+
+.unlock-account.sample-form-4 .btn {
+  margin-bottom: 10px;
+}
+
+.unlock-account.sample-form-4 .links a {
+  font-weight: 700;
+}
+
+.unlock-account.sample-form-4 label {
+  display: none;
+}
+
+.unlock-account.sample-form-4 img {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #fff;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  margin: 10px 0 40px 0;
+}
+
+[data-background="light"] .unlock-account.sample-form-4 {
+  background-color: #fff;
+  border-color: #ebebeb;
+  color: #212121;
+}
+
+[data-background="light"] .unlock-account.sample-form-4 h3 {
+  background-color: #303f9f;
+  color: #fff;
+}
+
+[data-background="dark"] .unlock-account.sample-form-4 {
+  background-color: #212121;
+  border-color: #303030;
+  color: #f5f5f5;
+}
+
+[data-background="dark"] .unlock-account.sample-form-4 h3 {
+  background-color: #303f9f;
+  color: #fff;
+}
+
+[data-background="indigo"] .unlock-account.sample-form-4 {
+  background-color: #1a237e;
+  border-color: #1f2a97;
+  color: #f5f5f5;
+}
+
+[data-background="indigo"] .unlock-account.sample-form-4 h3 {
+  background-color: #303f9f;
+  color: #fff;
+}
+
+[data-background="blue-grey"] .unlock-account.sample-form-4 {
+  background-color: #263238;
+  border-color: #32424a;
+  color: #f5f5f5;
+}
+
+[data-background="blue-grey"] .unlock-account.sample-form-4 h3 {
+  background-color: #303f9f;
+  color: #fff;
+}

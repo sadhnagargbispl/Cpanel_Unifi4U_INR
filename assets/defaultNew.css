@@ -1,0 +1,428 @@
+﻿.texttdcommon
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+font-weight:normal;
+padding:5px;
+background-color:#F5F5F5;
+}
+
+.texttdcommonWhite
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+font-weight:normal;
+padding:5px;
+color:white;
+background-color:#b33a9b;
+}
+
+.tdcommon {
+    /*font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+font-weight:normal;
+padding-top:1px;
+padding-bottom:1px;
+color:#49586F;*/
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+}
+.agreeCheckBox
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+font-weight:normal;
+padding-top:1px;
+padding-bottom:1px;
+color:#3F4A5E;
+}
+.tdcommonDarkColor
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+font-weight:bold;
+padding-top:5px;
+padding-bottom:5px;
+color:#A02021;
+background-color:#E2E2E2;
+}
+.tdcommonDarkColorNormal
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+font-weight:normal;
+padding-top:1px;
+padding-bottom:1px;
+color:#A02021;
+background-color:#E2E2E2;
+}
+
+.tdcommonUpdate
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+font-weight:normal;
+padding-top:1px;
+padding-bottom:1px;
+padding-left:20px;
+}
+.textboxcommon
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;font-size:11px;font-weight:normal;padding-top:1px;padding-bottom:1px;width:200px;border: solid 1px #CCCCCC;height:15px;
+}
+
+.textboxcommon1
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+font-weight:normal;
+padding-top:1px;
+padding-bottom:1px;
+width:150px;
+border: solid 1px #CCCCCC;
+height:15px;
+}
+.textboxcommon2
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+font-weight:normal;
+padding-top:1px;
+padding-bottom:1px;
+width:100px;
+border: solid 1px #CCCCCC;
+height:15px;
+}
+.textboxcommon50px
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+font-weight:normal;
+padding-top:1px;
+padding-bottom:1px;
+width:50px;
+border: solid 1px #CCCCCC;
+height:15px;
+}
+
+.gridcolumn
+{
+background-color:White;
+border-width:1px
+;border-style:Solid;
+font-size:11px;
+
+}
+
+.gridheader
+{
+color:White;
+background-color:#D03F07;
+font-size:10px;
+font-weight:bold;
+}
+
+.textlablecommon
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+font-weight:normal;
+padding-top:1px;
+padding-bottom:1px;
+
+}
+
+.radioCommon
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+border:solid 1px #CCCCCC;
+}
+/*
+.bottonCommon
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+border:solid 1px #4C5C75;
+background-color:#4C5C75;
+color:#FFFFFF;
+height:25px;
+width:73px;
+text-align:center;
+padding-top:2px;
+padding-bottom:5px;
+
+}
+
+
+.bottonCommon100
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+border:solid 1px #4C5C75;
+background-color:#4C5C75;
+color:#FFFFFF;
+height:25px;
+width:100px;
+text-align:center;
+padding-top:2px;
+padding-bottom:5px;
+
+}
+.bottonCommon200
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+border:solid 1px #4C5C75;
+background-color:#4C5C75;
+color:#FFFFFF;
+height:25px;
+width:200px;
+text-align:center;
+padding-top:2px;
+padding-bottom:5px;
+
+}
+
+.bottonCommon300
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+border:solid 1px #4C5C75;
+background-color:#4C5C75;
+color:#FFFFFF;
+height:25px;
+width:300px;
+text-align:center;
+padding-top:2px;
+padding-bottom:5px;
+
+}
+*/
+.tablecommon
+{
+	background-color:#F5F5F7;
+	/*font-family:Verdana, Arial, Helvetica, sans-serif;*/
+	font-size:11px;
+	font-weight:normal;
+}
+.comboCommon
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	width:200px;
+	border: solid 1px #CCCCCC;
+}
+.comboCommon50px
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	width:50px;
+	border: solid 1px #CCCCCC;
+}
+.comboCommon100px
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	width:100px;
+	border: solid 1px #CCCCCC;
+}
+.checkBoxCommon
+{
+	border:none;
+}
+.MemberInformationTab
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	border-left:solid 1px #CCCCCC;
+	border-top:solid 1px #CCCCCC;
+	border-right:solid 1px #CCCCCC;	
+	color:#000000;
+	padding-top:5px;
+	padding-bottom:5px;
+	
+}
+.TableInformation
+{
+	border:solid 1px #CCCCCC;
+	}
+.notificationText
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+font-weight:normal;
+padding-top:3px;
+padding-bottom:3px;
+color:Red;
+}
+.Congratulation
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:14px;
+font-weight:bold;
+padding-top:10px;
+padding-bottom:3px;
+padding-left:20px;
+color:#3F4A5E;
+}
+.lblCongratulationMsg
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	color: #FF0000;
+	font-style:italic;
+	
+}
+.legendCommon
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:13px;
+font-weight:bold;
+border:1px solid #3F4A5E;
+color:#3F4A5E;
+}
+.fieldsetCommon
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:13px;
+font-weight:normal;
+border:1px solid #3F4A5E;
+padding-left:20px;
+color:#3F4A5E;
+width:93%;
+}
+.tdApproval
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+font-weight:bold;
+padding-top:1px;
+padding-bottom:1px;
+padding-left:20px;
+color:#3F4A5E;
+width:300px;
+}
+
+.tdApprovalLabel
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+font-weight:normal;
+padding-top:1px;
+padding-bottom:1px;
+color:#3F4A5E;
+
+}
+
+
+/*member Details*/
+
+.mdborder 
+{
+	border: 1px solid #D2D2D2;	
+	/*border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #D2D2D2;
+	border-right-color: #D2D2D2;
+	border-bottom-color: #D2D2D2;
+	border-left-color: #D2D2D2;*/
+}
+.mdheading1
+{
+	font-family: Georgia, "Times New Roman" , Times, serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #871a71;
+	text-align: center;
+	height: 25px;
+}
+.mdtext {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 18px;
+	color: #3C3C3C;
+}
+.mdtextbold
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 18px;
+	color: #3C3C3C;
+}
+.mdtextbold1
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 18px;
+	color: #3C3C3C;
+	background-color: #F8F8F8;
+}
+.mdtextred
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 18px;
+	color: #FF0000;
+}
+.mdtextgreen {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight:bold;
+	line-height: 18px;
+	color: #006633;
+}
+.mdsubheading
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #b33a9b;
+}
+.bsreporttextnormal
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	padding-right: 5px; /*border:1px solid #CCCCCC;*/
+}
+.bspayouttableborder 
+{
+	border-left: 1px solid #D2D2D2;
+	
+}
+.payoutctrl
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;	
+	padding-left:5px;
+	padding-right:5px;
+	/*border:1px solid #CCCCCC;*/
+}
+.bsreporttextnormal1
+{
+	background-color:Orange;
+	
+}
+.bsreporttextnormal2
+{
+	background-color:#DF8306;
+	
+}

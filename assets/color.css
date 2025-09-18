@@ -1,0 +1,107 @@
+﻿html:not(.loading) [data-layout][data-background="light"] {
+    background-color: #fff !important;
+    color: #000 !important;
+ }
+ [data-navbar="light"] .navbar.navbar-1 {
+    background: #fff;
+    color: #000;
+}
+#cssmenu {
+    background: #5c3401  !important;
+}
+#cssmenu > ul > li > a {
+    color: #fff !important;
+}
+#cssmenu > ul > li.has-sub > a:before {
+    background: #fff !important;
+}
+#cssmenu > ul > li.has-sub > a:after {
+    background: #fff !important;
+}
+.gen-profile-box {
+    box-shadow: none !important;
+    border: 1px solid #5c3401 !important;
+}
+.profile-bar {
+    background: #fff !important;
+}
+.red-border {
+    border-color: #5c3401  !important;
+}
+.tab-bg {
+    background: #fff !important;
+}
+span.tab-lable {
+    color : #000 !important;
+}
+.blue-border {
+    border-color: #5c3401 !important;
+}
+.tab-bg-sum {
+    background: #fff !important;
+    color: #000 !important;
+}
+.tab-box-sum {
+    border: 1px solid #fff !important;
+}
+span.tab-field-sum {
+    color: #000;
+}
+.table th {
+    background-color: #fff !important;
+}
+[data-background="light"] .table th, [data-background="light"] .table td {
+    color: #000 !important;
+}
+[data-background="light"] .table th, [data-background="light"] .table td {
+    background-color: #fff !important; 
+    color: #000 !important;
+}
+span#ctl00_ContentPlaceHolder1_lblLink{
+    color : #000 !important;
+}
+input#ctl00_ContentPlaceHolder1_btncopy
+{
+    background: #5c3401  !important;
+    border : 1px solid #5c3401 !important;
+}
+[data-background="light"] .dataTables_length, [data-background="light"] .dataTables_filter, [data-background="light"] .dataTables_info {
+    color: #000 !important;
+}
+#cssmenu ul ul li:hover > a, #cssmenu ul ul li a:hover {
+    color: #fff !important;
+}
+[data-background="light"] .dataTables_wrapper .dataTables_paginate .paginate_button.disabled, [data-background="light"] .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, [data-background="light"] .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+    color: #000 !important;
+}
+#cssmenu ul ul li a {
+    background: #5c3401 !important;
+}
+[data-background="light"] .form-control {
+    border-color: #838383 !important;
+}
+input[type="button"], input[type="submit"]
+{
+    background-color: #5c3401 !important;
+    border-left-color: #5c3401 !important;
+    border-right-color: #5c3401 !important;
+    border-top-color: #5c3401 !important;
+    border-bottom-color: #5c3401 !important;
+}
+#cssmenu.small-screen #menu-button:after
+{
+    height : 8px !important;
+}
+
+#cssmenu.small-screen #menu-button
+{
+    color : #fff !important;
+}
+.navbar.navbar-1 {
+    height: 100px;
+  
+}
+.navbar.navbar-1 .logo {
+    padding-left: 40px;
+    padding-top: 33px;
+}

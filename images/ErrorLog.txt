@@ -1,0 +1,966 @@
+http://localhost:53429/My_Club_Happiness_Cpanel/index.aspx:  30-Oct-2023 07:25:24:312 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/index.aspx:  30-Oct-2023 07:27:18:681 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/index.aspx:  30-Oct-2023 07:29:21:087 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/index.aspx:  30-Oct-2023 07:32:11:139 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/index.aspx:  30-Oct-2023 07:39:10:090 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/index.aspx:  30-Oct-2023 07:47:59:470 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/index.aspx:  30-Oct-2023 07:51:57:431 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/index.aspx:  31-Oct-2023 03:07:40:936 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/GroupbusinessM.aspx (Filltotal):  31-Oct-2023 03:21:23:310 
+Could not find stored procedure 'Sp_MydirectReportHappyClub'.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/GroupbusinessM.aspx (Filltotal):  31-Oct-2023 03:22:12:040 
+Could not find stored procedure 'Sp_MydirectReportHappyClub'.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/GroupbusinessM.aspx (Filltotal):  31-Oct-2023 03:22:23:219 
+Could not find stored procedure 'Sp_MydirectReportHappyClub'.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/GroupbusinessM.aspx (Filltotal):  31-Oct-2023 03:24:02:171 
+Could not find stored procedure 'Sp_MydirectReportHappyClub'.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/GroupbusinessM.aspx (Filltotal):  31-Oct-2023 03:24:38:176 
+Could not find stored procedure 'Sp_MydirectReportHappyClub'.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/GroupbusinessM.aspx (Filltotal):  31-Oct-2023 03:26:31:299 
+Could not find stored procedure 'Sp_MydirectReportHappyClub'.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/iddetail.aspx:  31-Oct-2023 04:15:08:626 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/IdDetailNew.aspx:  31-Oct-2023 05:27:43:431 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/IdDetailNew.aspx:  31-Oct-2023 05:27:44:479 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/IdDetailNew.aspx:  31-Oct-2023 05:28:42:937 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/IdDetailNew.aspx:  31-Oct-2023 05:28:44:140 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/IdDetailNew.aspx:  31-Oct-2023 05:31:04:885 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/WalletRequestNew.aspx:  31-Oct-2023 08:02:01:776 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/index.aspx:  31-Oct-2023 08:22:57:951 
+Cannot find table 1.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/index.aspx:  31-Oct-2023 08:24:12:647 
+Cannot find table 1.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/index.aspx:  31-Oct-2023 08:25:27:379 
+Cannot find table 1.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/index.aspx:  31-Oct-2023 08:26:29:949 
+Cannot find table 1.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/IdDetailNew.aspx:  01-Nov-2023 11:43:35:925 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/IdDetailNew.aspx:  01-Nov-2023 11:44:27:997 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/IdDetailNew.aspx:  01-Nov-2023 11:47:16:717 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/IdDetailNew.aspx:  01-Nov-2023 11:47:46:864 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/IdDetailNew.aspx:  01-Nov-2023 11:49:14:618 
+'DDLAddressProof' has a SelectedValue which is invalid because it does not exist in the list of items.
+Parameter name: value
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/WalletRequestNew.aspx:  01-Nov-2023 12:24:13:503 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/WalletRequestNew.aspx:  01-Nov-2023 12:52:45:267 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/WalletRequestNew.aspx:  01-Nov-2023 01:10:55:246 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/WalletRequestNew.aspx:  01-Nov-2023 01:36:14:216 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/WalletRequestNew.aspx:  01-Nov-2023 01:36:28:869 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/WalletRequestNew.aspx:  01-Nov-2023 01:37:49:651 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/WalletRequestNew.aspx:  01-Nov-2023 01:38:16:696 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/WalletRequestDetail.aspx:  01-Nov-2023 04:25:11:864 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/MyDirectReport.aspx:  01-Nov-2023 06:24:40:977 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/MyDirectReport.aspx:  01-Nov-2023 06:24:41:006 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/WalletRequestDetail.aspx:  02-Nov-2023 12:08:48:678 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/WalletRequestNew.aspx:  02-Nov-2023 12:29:27:957 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/WalletRequestNew.aspx:  02-Nov-2023 01:51:03:235 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/IdActivation.aspx:  02-Nov-2023 03:26:55:010 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/WalletRequestNew.aspx:  02-Nov-2023 04:24:20:004 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/IdActivation.aspx:  02-Nov-2023 05:19:12:342 
+There is no row at position 0.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/IdActivation.aspx:  02-Nov-2023 05:22:14:119 
+There is no row at position 0.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/IdActivation.aspx:  02-Nov-2023 05:24:48:773 
+There is no row at position 0.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/IdActivation.aspx:  02-Nov-2023 05:26:25:387 
+There is no row at position 0.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/Myinvestment.aspx:  02-Nov-2023 06:04:25:824 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/Myinvestment.aspx:  02-Nov-2023 06:58:09:860 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/IdActivation.aspx:  02-Nov-2023 07:12:23:927 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/IdActivation.aspx:  02-Nov-2023 07:16:11:200 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/Myinvestment.aspx:  04-Nov-2023 02:19:15:895 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/Myinvestment.aspx:  04-Nov-2023 02:19:15:912 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/Myinvestment.aspx:  04-Nov-2023 02:20:23:309 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/Myinvestment.aspx:  04-Nov-2023 02:20:23:315 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/Mydirects.aspx:  04-Nov-2023 03:26:23:351 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/profileWithOtp.aspx:  08-Nov-2023 01:39:42:316 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/profileWithOtp.aspx:  08-Nov-2023 01:44:07:314 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/profileWithOtp.aspx:  08-Nov-2023 01:44:57:353 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/profileWithOtp.aspx:  08-Nov-2023 01:45:36:081 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/profileWithOtp.aspx:  08-Nov-2023 01:48:09:722 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/profileWithOtp.aspx:  08-Nov-2023 01:51:11:552 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/profileWithOtp.aspx:  08-Nov-2023 01:51:51:836 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/profileWithOtp.aspx:  08-Nov-2023 01:58:21:680 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/profileWithOtp.aspx:  08-Nov-2023 01:58:41:469 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/profileWithOtp.aspx:  08-Nov-2023 01:59:46:769 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/profileWithOtp.aspx:  08-Nov-2023 02:00:36:466 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/profileWithOtp.aspx:  08-Nov-2023 02:01:05:653 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/profileWithOtp.aspx:  08-Nov-2023 02:01:35:942 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/profileWithOtp.aspx:  08-Nov-2023 02:05:10:217 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/profileWithOtp.aspx:  08-Nov-2023 02:05:25:608 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/Newjoining1.aspx:  08-Nov-2023 05:20:46:391 
+The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+--------------------------------------------------------
+http://localhost:51977/My_Club_Happiness_Cpanel/WalletRequestDetail.aspx:  09-Nov-2023 06:00:16:011 
+DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'AdminRemark'.
+--------------------------------------------------------
+http://localhost:51092/My_Club_Happiness_Cpanel/WalletRequestNew.aspx:  18-Nov-2023 11:20:14:638 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51092/My_Club_Happiness_Cpanel/WalletRequest.aspx:  18-Nov-2023 12:20:06:495 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51092/My_Club_Happiness_Cpanel/fundwithdraw.aspx:  18-Nov-2023 01:22:33:445 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51092/My_Club_Happiness_Cpanel/fundwithdraw.aspx:  18-Nov-2023 01:38:59:617 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51092/My_Club_Happiness_Cpanel/fundwithdraw.aspx:  18-Nov-2023 02:04:47:897 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51092/My_Club_Happiness_Cpanel/fundwithdraw.aspx:  18-Nov-2023 03:36:45:884 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/index.aspx:  27-Nov-2023 01:31:38:266 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/index.aspx:  30-Nov-2023 12:54:40:721 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/Index.aspx:  30-Nov-2023 07:13:05:279 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/Referaltree.aspx?DownLineFormNo=595355:  01-Dec-2023 11:40:53:978 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/Referaltree.aspx?DownLineFormNo=595355:  01-Dec-2023 11:40:54:025 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/Referaltree.aspx?DownLineFormNo=856986:  01-Dec-2023 11:41:01:269 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/Referaltree.aspx?DownLineFormNo=856986:  01-Dec-2023 11:41:01:269 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/Referaltree.aspx?DownLineFormNo=856986:  01-Dec-2023 11:43:47:997 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/Referaltree.aspx?DownLineFormNo=856986:  01-Dec-2023 11:48:33:657 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/Referaltree.aspx?DownLineFormNo=856986:  01-Dec-2023 11:48:33:657 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/RepurchaseWalletDetail.aspx:  19-Dec-2023 04:13:26:582 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/WalletRequestNew.aspx:  19-Dec-2023 07:52:26:059 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59154/My_Club_Happiness_Cpanel/aDDFUND.aspx:  28-Dec-2023 12:08:03:077 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59154/My_Club_Happiness_Cpanel/index.aspx:  28-Dec-2023 12:10:34:661 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59154/My_Club_Happiness_Cpanel/addfund.aspx:  28-Dec-2023 12:12:01:215 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59154/My_Club_Happiness_Cpanel/addfund.aspx:  28-Dec-2023 12:26:30:350 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59154/My_Club_Happiness_Cpanel/index.aspx:  28-Dec-2023 01:16:31:129 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59154/My_Club_Happiness_Cpanel/addfund.aspx:  28-Dec-2023 01:17:54:711 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59154/My_Club_Happiness_Cpanel/addfund.aspx:  28-Dec-2023 01:21:52:735 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59154/My_Club_Happiness_Cpanel/addfund.aspx:  28-Dec-2023 01:23:58:945 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59154/My_Club_Happiness_Cpanel/addfund.aspx:  28-Dec-2023 01:24:25:552 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59154/My_Club_Happiness_Cpanel/addfund.aspx:  28-Dec-2023 01:26:11:511 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59154/My_Club_Happiness_Cpanel/addfund.aspx:  28-Dec-2023 01:46:12:359 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59154/My_Club_Happiness_Cpanel/addfund.aspx:  28-Dec-2023 01:47:41:203 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/addfund.aspx:  29-Dec-2023 12:08:42:193 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/AddFund.aspx:  29-Dec-2023 01:10:29:449 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/AddFund.aspx:  29-Dec-2023 01:31:10:873 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/AddFund.aspx:  29-Dec-2023 01:35:34:186 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53429/My_Club_Happiness_Cpanel/AddFund.aspx:  29-Dec-2023 03:14:28:782 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:60385/My_Club_Happiness_Cpanel/index.aspx:  24-Jun-2024 01:36:00:080 
+DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'IDNo'.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/index.aspx:  25-Jun-2024 07:13:12:813 
+DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'IDNo'.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/index.aspx:  25-Jun-2024 07:14:04:233 
+DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'MemName'.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/index.aspx:  25-Jun-2024 07:14:14:356 
+Column 'ProfilePic' does not belong to table Table7.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/index.aspx:  25-Jun-2024 07:14:30:596 
+Column 'ProfilePic' does not belong to table Table7.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/index.aspx:  25-Jun-2024 07:24:01:109 
+Column 'ProfilePic' does not belong to table Table7.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/index.aspx:  25-Jun-2024 07:25:16:915 
+Cannot find column [Investment].
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/index.aspx:  26-Jun-2024 10:55:50:589 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/index.aspx:  26-Jun-2024 10:59:03:873 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/NewJoining1.aspx:  26-Jun-2024 11:44:26:802 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/NewJoining1.aspx:  26-Jun-2024 11:52:01:522 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/NewJoining1.aspx:  26-Jun-2024 11:56:42:544 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/NewJoining1.aspx:  26-Jun-2024 12:06:35:551 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/NewJoining1.aspx:  26-Jun-2024 12:10:21:728 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/NewJoining1.aspx:  26-Jun-2024 12:11:22:492 
+Value cannot be null.
+Parameter name: address
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/NewJoining1.aspx:  26-Jun-2024 12:20:13:439 
+Value cannot be null.
+Parameter name: address
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/NewJoining1.aspx:  26-Jun-2024 12:43:13:532 
+Value cannot be null.
+Parameter name: address
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/profileWithOtp.aspx:  26-Jun-2024 12:47:06:059 
+Column 'CName' does not belong to table .
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/profileWithOtp.aspx:  26-Jun-2024 12:50:54:667 
+Column 'CName' does not belong to table .
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/profileWithOtp.aspx:  26-Jun-2024 12:54:21:200 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/profileWithOtp.aspx:  26-Jun-2024 12:55:29:631 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/profileWithOtp.aspx:  26-Jun-2024 12:57:22:504 
+Conversion from string "" to type 'Integer' is not valid.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/profileWithOtp.aspx:  26-Jun-2024 01:01:35:500 
+Conversion from string "" to type 'Integer' is not valid.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/profileWithOtp.aspx:  26-Jun-2024 01:22:34:399 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/IdDetailNew.aspx:  26-Jun-2024 01:33:24:844 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/IdDetailNew.aspx:  26-Jun-2024 01:33:25:721 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/IdDetailNew.aspx:  26-Jun-2024 01:41:54:171 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/IdDetailNew.aspx:  26-Jun-2024 01:41:56:449 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Mydirects.aspx:  26-Jun-2024 02:51:31:143 
+Column 'LeftPVValue' does not belong to table Table.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Mydirects.aspx:  26-Jun-2024 02:55:57:224 
+DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'kitAmount'.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Mydirects.aspx:  26-Jun-2024 02:55:58:088 
+Column 'LeftPVValue' does not belong to table Table.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/MyDirects.aspx:  26-Jun-2024 02:57:40:601 
+DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'kitAmount'.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/MyDirects.aspx:  26-Jun-2024 02:57:41:429 
+Column 'LeftPVValue' does not belong to table Table.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Mydirects.aspx:  26-Jun-2024 02:58:56:281 
+Column 'LeftPVValue' does not belong to table Table.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Mydirects.aspx:  26-Jun-2024 02:59:02:596 
+Column 'LeftPVValue' does not belong to table Table.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Mydirects.aspx:  26-Jun-2024 03:03:21:844 
+Column 'LeftPVValue' does not belong to table Table.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/IdActivation.aspx:  26-Jun-2024 03:24:57:643 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/IdActivation.aspx:  26-Jun-2024 03:24:58:510 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/IdActivation.aspx:  26-Jun-2024 03:24:59:334 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/IdActivation.aspx:  26-Jun-2024 03:25:26:239 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/IdActivation.aspx:  26-Jun-2024 03:25:27:169 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/IdActivation.aspx:  26-Jun-2024 03:25:27:977 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/IdActivation.aspx:  26-Jun-2024 03:44:37:601 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Myinvestment.aspx:  26-Jun-2024 04:15:43:507 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Myinvestment.aspx:  26-Jun-2024 04:16:11:852 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Myinvestment.aspx:  26-Jun-2024 04:16:11:856 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Myinvestment.aspx:  26-Jun-2024 04:19:31:057 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Myinvestment.aspx:  26-Jun-2024 04:19:31:060 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Myinvestment.aspx:  26-Jun-2024 04:19:35:289 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Myinvestment.aspx:  26-Jun-2024 04:19:35:291 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/myinvestment.aspx:  26-Jun-2024 04:19:52:539 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/myinvestment.aspx:  26-Jun-2024 04:19:52:544 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/index.aspx:  26-Jun-2024 05:24:51:965 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/index.aspx:  26-Jun-2024 05:39:23:498 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/WalletRequestDetail.aspx:  27-Jun-2024 10:35:10:375 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/WalletRequestDetail.aspx:  27-Jun-2024 10:35:45:178 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/WalletRequestDetail.aspx:  27-Jun-2024 10:37:37:646 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Rptwithdrawls.aspx:  27-Jun-2024 10:38:33:422 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Reward.aspx:  27-Jun-2024 10:50:13:560 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Reward.aspx:  27-Jun-2024 10:50:13:565 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/LevelIncentiveDetailReport.aspx:  27-Jun-2024 11:01:24:919 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Index.aspx:  27-Jun-2024 12:24:27:665 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/IdActivation.aspx:  27-Jun-2024 03:31:10:261 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/IdActivation.aspx:  27-Jun-2024 04:10:02:464 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/IdActivation.aspx:  27-Jun-2024 04:46:12:062 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/IdActivation.aspx:  27-Jun-2024 04:51:06:774 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/IdActivation.aspx:  27-Jun-2024 04:54:22:220 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/IdActivation.aspx:  27-Jun-2024 05:20:32:563 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/IdActivation.aspx:  27-Jun-2024 05:28:18:903 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/IdActivation.aspx:  27-Jun-2024 05:31:57:703 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/IdActivation.aspx:  27-Jun-2024 05:46:42:504 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/IdActivation.aspx:  27-Jun-2024 05:49:35:932 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/IdActivation.aspx:  27-Jun-2024 05:49:35:936 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/IdActivation.aspx:  27-Jun-2024 06:06:35:935 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/IdActivation.aspx:  27-Jun-2024 06:06:38:154 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/IdActivation.aspx:  27-Jun-2024 06:51:51:335 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/IdActivation.aspx:  27-Jun-2024 07:17:14:984 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Complain.aspx:  28-Jun-2024 10:18:00:357 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Complain.aspx:  28-Jun-2024 10:18:00:398 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Complain.aspx:  28-Jun-2024 10:19:29:567 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Complain.aspx:  28-Jun-2024 10:19:29:587 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Complain.aspx:  28-Jun-2024 10:21:07:260 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Complain.aspx:  28-Jun-2024 10:21:07:315 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Complain.aspx:  28-Jun-2024 10:22:49:059 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Complain.aspx:  28-Jun-2024 10:22:49:059 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Complain.aspx:  28-Jun-2024 10:23:02:433 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Complain.aspx:  28-Jun-2024 10:23:02:441 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Complain.aspx:  28-Jun-2024 10:30:53:543 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Complain.aspx:  28-Jun-2024 10:30:53:566 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Complain.aspx:  28-Jun-2024 10:31:09:167 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Complain.aspx:  28-Jun-2024 10:31:53:360 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Complain.aspx:  28-Jun-2024 10:31:53:378 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Complain.aspx:  28-Jun-2024 10:33:23:891 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Complain.aspx:  28-Jun-2024 10:33:23:896 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Complain.aspx:  28-Jun-2024 10:33:40:756 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Complain.aspx:  28-Jun-2024 10:52:22:108 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Complain.aspx:  28-Jun-2024 10:52:22:155 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Mydirects.aspx:  28-Jun-2024 10:54:03:581 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Mydirects.aspx:  28-Jun-2024 11:02:08:031 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Mydirects.aspx:  28-Jun-2024 11:03:17:304 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Mydirects.aspx:  28-Jun-2024 11:13:12:305 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Mydirects.aspx:  28-Jun-2024 11:56:47:212 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Mydirects.aspx:  28-Jun-2024 11:59:59:146 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/MyDirects.aspx:  28-Jun-2024 12:00:50:167 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Mydirects.aspx:  28-Jun-2024 12:30:34:300 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Mydirects.aspx:  28-Jun-2024 12:31:09:260 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Mydirects.aspx:  28-Jun-2024 12:37:39:453 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Mydirects.aspx:  28-Jun-2024 12:40:37:091 
+DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'kitAmount'.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Reftree.aspx:  28-Jun-2024 01:09:06:937 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/Reftree.aspx:  28-Jun-2024 01:15:17:628 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59600/BigHitter_Cpanel/IdDetailNew.aspx:  28-Jun-2024 01:56:57:163 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:53101/BigHitter_Cpanel/IdDetailNew.aspx:  28-Jun-2024 01:59:28:672 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:53101/BigHitter_Cpanel/IdDetailNew.aspx:  28-Jun-2024 02:57:20:819 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:53101/BigHitter_Cpanel/Referaltree.aspx:  28-Jun-2024 03:39:37:960 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53101/BigHitter_Cpanel/Reftree.aspx:  28-Jun-2024 03:48:16:337 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53101/BigHitter_Cpanel/Reftree.aspx:  28-Jun-2024 04:22:41:161 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53101/BigHitter_Cpanel/FundWithdrawal.aspx:  28-Jun-2024 06:33:24:175 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53101/BigHitter_Cpanel/FundWithdrawal.aspx:  29-Jun-2024 10:21:32:651 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53101/BigHitter_Cpanel/Rptwithdrawls.aspx:  29-Jun-2024 10:32:29:332 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:53101/BigHitter_Cpanel/Rptwithdrawls.aspx:  29-Jun-2024 10:47:14:431 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:53101/BigHitter_Cpanel/Rptwithdrawls.aspx:  29-Jun-2024 10:49:57:122 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:65097/Cpanel_Bighitter/LevelIncome.aspx:  19-Jul-2024 05:49:03:736 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:65097/Cpanel_Bighitter/index.aspx:  19-Jul-2024 06:21:40:806 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:55180/Cpanel_Bighitter/IdActivation.aspx:  26-Jul-2024 06:18:35:206 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:55180/Cpanel_Bighitter/DailyBinaryIncome.aspx:  01-Aug-2024 02:51:52:187 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:55180/Cpanel_Bighitter/DailyBinaryIncome.aspx:  07-Aug-2024 03:34:25:972 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:65097/Cpanel_Bighitter/index.aspx:  12-Aug-2024 04:24:26:960 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:65097/Cpanel_Bighitter/index.aspx:  12-Aug-2024 04:38:51:845 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:65097/Cpanel_Bighitter/index.aspx:  12-Aug-2024 04:51:15:855 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:65097/Cpanel_Bighitter/index.aspx:  12-Aug-2024 05:01:04:796 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:65097/Cpanel_Bighitter/index.aspx:  12-Aug-2024 05:05:41:875 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:65097/Cpanel_Bighitter/AddFundPayment.aspx:  12-Aug-2024 05:59:06:424 
+There is no row at position 2.
+--------------------------------------------------------
+http://localhost:65097/Cpanel_Bighitter/index.aspx:  12-Aug-2024 06:18:17:923 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:65097/Cpanel_Bighitter/Index.aspx:  17-Aug-2024 12:55:13:848 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:55180/Cpanel_Bighitter/IdActivation.aspx:  21-Aug-2024 06:46:20:998 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:55180/Cpanel_Bighitter/DailyBinaryIncome.aspx:  27-Aug-2024 10:59:07:420 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:64013/Cpanel_Bighitter/Rptwithdrawls.aspx:  30-Aug-2024 05:06:57:253 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:65097/Cpanel_Bighitter/AddFundConverinUSDT.aspx:  27-Sep-2024 10:41:18:836 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:65097/Cpanel_Bighitter/AddFundConverinUSDT.aspx:  27-Sep-2024 10:59:10:403 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:64013/Cpanel_Bighitter/AddFundConverinUSDT.aspx:  02-Oct-2024 09:25:23:796 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:65097/Cpanel_Bighitter/DailyBinaryIncome.aspx:  09-Oct-2024 05:07:35:048 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:64178/index.aspx:  26-Nov-2024 11:42:39:276
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:64178/NewJoining1.aspx: 26-Nov-2024 01:29:42:381
+Could not find stored procedure 'Sp_GetLoginDetail'.
+--------------------------------------------------------
+http://localhost:64178/profile.aspx:  26-Nov-2024 02:00:23:585
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:64178/Reftree.aspx:  28-Nov-2024 10:59:11:639
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:64178/Referaltree.aspx:  28-Nov-2024 10:59:14:713
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:64178/Idactivation.aspx:  28-Nov-2024 12:04:35:604 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:64178/Idactivation.aspx:  28-Nov-2024 12:33:04:840 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:64178/Idactivation.aspx:  28-Nov-2024 01:11:43:284 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:64178/Idactivation.aspx:  28-Nov-2024 01:41:00:452 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:64178/index.aspx:  28-Nov-2024 03:45:52:268
+Column 'totalinv' does not belong to table Table11.
+--------------------------------------------------------
+http://localhost:64178/index.aspx:  28-Nov-2024 03:49:40:287
+Column 'totalinv' does not belong to table Table11.
+--------------------------------------------------------
+http://localhost:64178/index.aspx:  30-Nov-2024 11:15:25:617
+Column 'totalinv' does not belong to table Table3.
+--------------------------------------------------------
+http://localhost:49210/index.aspx:  20-Dec-2024 03:01:26:658
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:50549/Idactivation.aspx: 08-Jan-2025 06:39:55:327
+Error converting data type varchar to numeric.
+--------------------------------------------------------
+http://localhost:50549/FundToFundTransfer.aspx:  08-Jan-2025 06:44:26:161 
+Invalid object name 'Unifi..R_MemTreeRelation'.
+--------------------------------------------------------
+http://localhost:50549/FundToFundTransfer.aspx:  08-Jan-2025 06:49:07:009 
+Invalid object name 'Unifi..R_MemTreeRelation'.
+--------------------------------------------------------
+http://localhost:50250/Index.aspx:  20-Jan-2025 03:29:39:354
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53017/profile.aspx:  21-Jan-2025 10:31:12:500
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53017/profile.aspx:  21-Jan-2025 10:38:01:803
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53017/profile.aspx:  21-Jan-2025 10:39:08:028
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:53017/profile.aspx:  21-Jan-2025 10:57:23:963
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:50250/index.aspx:  22-Jan-2025 12:30:49:262
+Input string was not in a correct format.
+--------------------------------------------------------
+http://localhost:50250/index.aspx:  22-Jan-2025 12:32:39:623
+Input string was not in a correct format.
+--------------------------------------------------------
+http://localhost:52630/PETROCARDPurchase.aspx: 05-Feb-2025 05:18:23:629
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:52630/PETROCARDPurchase.aspx: 05-Feb-2025 05:18:47:348
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:52630/PETROCARDPurchase.aspx: 05-Feb-2025 05:18:48:344
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:52630/PETROCARDPurchase.aspx: 05-Feb-2025 05:18:52:144
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:52630/PETROCARDPurchase.aspx: 05-Feb-2025 05:18:55:076
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:52630/PETROCARDPurchase.aspx: 05-Feb-2025 05:18:59:345
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:52630/PETROCARDPurchase.aspx: 05-Feb-2025 05:19:35:777
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:52630/PETROCARDPurchase.aspx: 05-Feb-2025 05:19:45:679
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:52630/PETROCARDPurchase.aspx: 05-Feb-2025 05:19:46:757
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:52630/PETROCARDPurchase.aspx: 05-Feb-2025 05:19:47:948
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:52630/PETROCARDPurchase.aspx: 05-Feb-2025 05:19:49:038
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:52630/PETROCARDPurchase.aspx: 05-Feb-2025 05:19:50:086
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:52630/PETROCARDPurchase.aspx: 05-Feb-2025 05:19:51:643
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:52630/PETROCARDPurchase.aspx: 05-Feb-2025 05:19:52:828
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53017/index.aspx:  17-Mar-2025 01:05:56:086
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53017/index.aspx:  01-May-2025 05:42:18:810
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53017/index.aspx:  08-May-2025 04:31:36:936
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53017/index.aspx:  27-May-2025 06:46:03:079
+Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+--------------------------------------------------------
+http://localhost:53017/Idactivation.aspx:  29-May-2025 12:40:15:910 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53017/Idactivation.aspx:  29-May-2025 01:46:33:837 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53017/Idactivation.aspx: 29-May-2025 01:48:13:877
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:53017/Idactivation.aspx: 29-May-2025 01:49:43:177
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:53017/Idactivation.aspx: 29-May-2025 01:54:20:116
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:53017/Idactivation.aspx:  29-May-2025 03:07:30:037 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57986/IdActivationSuperpackage.aspx:  19-Aug-2025 12:22:08:640 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57986/Index.aspx:  19-Aug-2025 03:57:26:473
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:60962/WalletRequest.aspx: 15-Sep-2025 05:53:19:320 
+Cannot perform '=' operation on System.Decimal and System.String.
+--------------------------------------------------------
+http://localhost:60962/WalletRequest.aspx: 15-Sep-2025 05:53:41:881 
+Cannot perform '=' operation on System.Decimal and System.String.
+--------------------------------------------------------
+http://localhost:60962/WalletRequest.aspx: 15-Sep-2025 05:54:17:057 
+Cannot perform '=' operation on System.Decimal and System.String.
+--------------------------------------------------------
+http://localhost:60962/WalletRequestDetail.aspx:  15-Sep-2025 06:03:59:544
+Invalid object name 'WalletReqINR'.
+--------------------------------------------------------
+http://localhost:60962/NewJoining1.aspx: 16-Sep-2025 12:08:18:716
+Cannot insert the value NULL into column 'Package1', table 'unifi.dbo.MultiTopup'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+--------------------------------------------------------
+http://localhost:60962/profile.aspx:  16-Sep-2025 12:19:39:448
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:60962/Idactivation.aspx:  16-Sep-2025 01:57:00:046 
+Column 'Kitamount' does not belong to table Table.
+--------------------------------------------------------
+http://localhost:60962/Idactivation.aspx:  16-Sep-2025 01:57:24:927 
+Column 'Kitamount' does not belong to table Table.
+--------------------------------------------------------
+http://localhost:60962/Idactivation.aspx:  16-Sep-2025 01:58:09:843 
+Column 'Kitamount' does not belong to table Table.
+--------------------------------------------------------
+http://localhost:60962/Idactivation.aspx:  16-Sep-2025 03:03:09:696 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:60962/Idactivation.aspx:  16-Sep-2025 03:03:36:295 
+Column 'Kitamount' does not belong to table Table.
+--------------------------------------------------------
+http://localhost:60962/Idactivation.aspx:  16-Sep-2025 03:03:58:859 
+Column 'Kitamount' does not belong to table Table.
+--------------------------------------------------------
+http://localhost:60962/Idactivation.aspx: 16-Sep-2025 03:22:01:013
+Column 'INRActiveStatus' does not belong to table Table.
+--------------------------------------------------------
+http://localhost:60962/Idactivation.aspx: 16-Sep-2025 03:22:46:743
+Column 'INRActiveStatus' does not belong to table Table.
+--------------------------------------------------------
+http://localhost:60962/Idactivation.aspx: 16-Sep-2025 03:24:17:886
+Column 'ActiveStatus' does not belong to table Table.
+--------------------------------------------------------
+http://localhost:60962/index.aspx:  16-Sep-2025 04:20:29:697
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:60962/Newjoining1.aspx: 17-Sep-2025 03:04:07:332
+Incorrect syntax near ','.
+--------------------------------------------------------
+http://localhost:60962/Newjoining1.aspx: 17-Sep-2025 03:05:40:000
+Violation of PRIMARY KEY constraint 'PK__Trnjoini__9E5EEF34DDC10836'. Cannot insert duplicate key in object 'dbo.Trnjoining'. The duplicate key value is (925766).
+The statement has been terminated.
+--------------------------------------------------------
+http://localhost:60962/NewJoining1.aspx: 17-Sep-2025 03:11:34:890
+Incorrect syntax near ','.
+--------------------------------------------------------
+http://localhost:60962/WalletRequest.aspx: 18-Sep-2025 11:07:52:801 
+Thread was being aborted.
+--------------------------------------------------------

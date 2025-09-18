@@ -1,0 +1,48 @@
+[data-layout="empty-view-1"] {
+    position: relative;
+    -ms-overflow-style: none;
+    overflow-x: hidden;
+    height: calc(100%);
+}
+
+    [data-layout="empty-view-1"] ::-webkit-scrollbar {
+        display: none;
+        width: 0 !important;
+    }
+
+    [data-layout="empty-view-1"] .container-fluid {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        height: calc(100%);
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        z-index: 2;
+    }
+
+html [data-layout="empty-view-1"] {
+    background: url(/GenexPanel/assets/images/empty-view-1.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+[data-layout="empty-view-1"] .bg-dark {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: calc(100%);
+    height: calc(100%);
+    opacity: 0.75;
+    z-index: 1;
+}

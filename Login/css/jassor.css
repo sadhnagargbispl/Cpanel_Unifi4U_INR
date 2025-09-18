@@ -1,0 +1,32 @@
+/* jssor slider loading skin spin css */
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes jssorl-009-spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        .jssorb101 .i {position:absolute;cursor:pointer;}
+        .jssorb101 .i .ci {fill:#000;}
+        .jssorb101 .i .co {fill:#fff;opacity:.3;}
+        .jssorb101 .i:hover .co {fill:#ff9933;opacity: 1;}
+        .jssorb101 .i:hover .ci {fill:#fff;}
+        .jssorb101 .iav .ci {fill:#fff;stroke-width:0;}
+        .jssorb101 .iav .co {fill:#46d1d3;opacity: 1;}
+        .jssorb101 .i.idn {opacity:.3;}
+        .jssora051 {display:block;position:absolute;cursor:pointer;}
+        .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+        .jssora051:hover {opacity:.8;}
+        .jssora051.jssora051dn {opacity:.5;}
+        .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+.slider-text{font-size:15px; color:#242722;}
+.slider-text1{font-size:26px; color:#548a1b;}
+.slider-text2{font-size:50px; font-weight: bold; color:#fff;}
+.slider-text3{font-size:22px; font-weight: normal; color:#fff;}

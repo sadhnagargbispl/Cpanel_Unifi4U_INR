@@ -1,0 +1,15 @@
+.menutext {
+	font-family: Tahoma;
+	font-size: 11px;
+
+	color: #FFF;
+	background-image: url(../Shinegenex%20Dashboard_files/Images/UserPanel/menubg.jpg);
+	height: 30px;
+}
+.mailtexrt {
+	font-family: Tahoma;
+	font-size: 11px;
+	font-weight: bold;
+	color: #EC2127;
+}
+

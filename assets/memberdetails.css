@@ -1,0 +1,44 @@
+.backgroundtext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 900;
+	color: #FFFFFF;
+	text-align: center;
+	background-image: url(../Shinegenex%20Dashboard_files/images/box2.jpg);
+	height: 40px;
+}
+.personal {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: bold;
+	color: #FFFFFF;
+	height: 30px;
+	padding-left: 5px;
+	background-image: url(../Shinegenex%20Dashboard_files/images/bg1.jpg);
+}
+.text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	color: #414141;
+	text-align: justify;
+	/*background-color: #F8F8F8;*/
+}
+
+
+.border {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: dotted;
+	border-right-style: dotted;
+	border-bottom-style: dotted;
+	border-left-style: dotted;
+	border-top-color: #C5C5C5;
+	border-right-color: #C5C5C5;
+	border-bottom-color: #C5C5C5;
+	border-left-color: #C5C5C5;
+}

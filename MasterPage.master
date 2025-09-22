@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
 
 <!DOCTYPE html>
 
@@ -293,7 +293,7 @@
                         <ul>
                             <li><a href="Mydirects.aspx">Level Wise Report</a></li>
                             <li><a href="Reftree.aspx">Referral Tree</a></li>
-                            <li><a href="SRefTree.aspx">Placement Tree</a></li>
+                           <%-- <li><a href="SRefTree.aspx">Placement Tree</a></li>--%>
                             <li><a href="GroupbusinessDate.aspx">Date Wise Team Business</a></li>
                         </ul>
                     </li>

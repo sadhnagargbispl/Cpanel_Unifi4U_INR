@@ -50,7 +50,7 @@ public partial class PETROCARDPurchase : System.Web.UI.Page
         try
         {
             DataTable dt = new DataTable();
-            string str = " Select * From dbo.ufnGetBalance('" + Convert.ToInt32(Session["Formno"]) + "','S')";
+            string str = " Select * From dbo.ufnGetBalance('" + Convert.ToInt32(Session["Formno"]) + "','R')";
             dt = SqlHelper.ExecuteDataset(constr, CommandType.Text, str).Tables[0];
             if (dt.Rows.Count > 0)
             {
@@ -91,7 +91,7 @@ public partial class PETROCARDPurchase : System.Web.UI.Page
         try
         {
             Dt = new DataTable();
-            query = "Exec Sp_getKitPetro '" + Session["formno"] + "'";
+            query = "Exec Sp_getKitPetroINR '" + Session["formno"] + "'";
             Dt = SqlHelper.ExecuteDataset(constr1, CommandType.Text, query).Tables[0];
             Session["ShopFund"] = Dt;
 
@@ -119,7 +119,7 @@ public partial class PETROCARDPurchase : System.Web.UI.Page
             string Amount = txtAmount.Text;
             string kitid = lblKitid.Text;
 
-            string str = " select count(*) as Cnt from " + objDal.dBName + "..repurchincome where formno = '" + Convert.ToInt32(Session["Formno"]) + "' AND kitid in (7,8,14)";
+            string str = " select count(*) as Cnt from " + objDal.dBName + "..repurchincomeINR where formno = '" + Convert.ToInt32(Session["Formno"]) + "' AND kitid in (2,3,4)";
             DataTable dts = new DataTable();
             dts = SqlHelper.ExecuteDataset(ConfigurationManager.ConnectionStrings["constr1"].ConnectionString, CommandType.Text, str).Tables[0];
             if (dts.Rows.Count > 0)

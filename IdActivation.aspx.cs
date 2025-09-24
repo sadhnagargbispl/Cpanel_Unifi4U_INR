@@ -28,6 +28,8 @@ public partial class Idactivation : System.Web.UI.Page
                     HdnCheckTrnns.Value = GenerateRandomStringActive(6);
                     FundWalletGetBalance();
                     FillKit();
+                    txtMemberId.Text = Session["idno"].ToString();
+                    GetName();
                 }
             }
             else

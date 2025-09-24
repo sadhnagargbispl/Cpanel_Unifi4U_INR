@@ -64,7 +64,7 @@ public partial class PetroCardFinalPurchase : System.Web.UI.Page
                     Session["Retry"] = null;
                     Session["OTP_"] = null;
                     HdnCheckTrnns.Value = GenerateRandomString(6);
-                    string str = " select count(*) as Cnt from " + ObjDal.dBName + "..repurchincome where formno = '" + Convert.ToInt32(Session["Formno"]) + "' AND kitid in (7,8,14)";
+                    string str = " select count(*) as Cnt from " + ObjDal.dBName + "..repurchincomeINR where formno = '" + Convert.ToInt32(Session["Formno"]) + "' AND kitid in (2,3,4)";
                     DataTable dts = new DataTable();
                     dts = SqlHelper.ExecuteDataset(constr1, CommandType.Text, str).Tables[0];
                     if (dts.Rows.Count > 0)
@@ -96,7 +96,7 @@ public partial class PetroCardFinalPurchase : System.Web.UI.Page
             DataTable dt = new DataTable();
 
             // Update query for stored procedure without formno parameter
-           string query = IsoStart + "Exec Sp_GetWalletTypePetroCard " + IsoEnd;
+           string query = IsoStart + "Exec Sp_GetWalletTypePetroCardINR " + IsoEnd;
 
             dt = SqlHelper.ExecuteDataset(constr1, CommandType.Text, query).Tables[0];
 
@@ -231,6 +231,7 @@ public partial class PetroCardFinalPurchase : System.Web.UI.Page
                     MemberStatus.Value = dt.Rows[0]["ActiveStatus"].ToString();
                     hdnFormno.Value = dt.Rows[0]["Formno"].ToString();
                     TxtEmail.Text = dt.Rows[0]["Email"].ToString();
+                    
                     if (TxtEmail.Text == "")
                     {
                         TxtEmail.Enabled = true;
@@ -249,6 +250,15 @@ public partial class PetroCardFinalPurchase : System.Web.UI.Page
                         Txtmonileno.Enabled = false;
                     }
                     LblMobile.Text = string.Empty;
+                    Txtpanno.Text = dt.Rows[0]["panno"].ToString();
+                    if (Txtpanno.Text == "")
+                    {
+                        Txtpanno.Enabled = true;
+                    }
+                    else
+                    {
+                        Txtpanno.Enabled = false;
+                    }
                     return "OK";
                 }
             }
@@ -268,7 +278,7 @@ public partial class PetroCardFinalPurchase : System.Web.UI.Page
             string query = "";
             DataTable dt;
             dt = new DataTable();
-            query = ObjDal.Isostart + " select * from  " + ObjDal.dBName + "..m_kitmaster where kitid = '" + kitid + "'" + ObjDal.IsoEnd;
+            query = ObjDal.Isostart + " select * from  " + ObjDal.dBName + "..INR_kitmaster where kitid = '" + kitid + "'" + ObjDal.IsoEnd;
             dt = SqlHelper.ExecuteDataset(constr1, CommandType.Text, query).Tables[0];
             if (dt.Rows.Count > 0)
             {
@@ -396,7 +406,7 @@ public partial class PetroCardFinalPurchase : System.Web.UI.Page
             ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Login Error", scrname, false);
             return;
         }
-        string str = " select count(*) as Cnt from " + ObjDal.dBName + "..repurchincome where formno = '" + Convert.ToInt32(Session["Formno"]) + "' AND kitid in (7,8,14)";
+        string str = " select count(*) as Cnt from " + ObjDal.dBName + "..repurchincomeINR where formno = '" + Convert.ToInt32(Session["Formno"]) + "' AND kitid in (2,3,4)";
         DataTable dts = new DataTable();
         dts = SqlHelper.ExecuteDataset(constr1, CommandType.Text, str).Tables[0];
         if (dts.Rows.Count > 0)
@@ -443,7 +453,7 @@ public partial class PetroCardFinalPurchase : System.Web.UI.Page
                 {
                     var billNo = GenerateRandomStringactive(6);
                     string sql = "";
-                    sql = "EXEC Sp_PaymentPetroCard '" + txtMemberId.Text + "','" + Hdnkitid.Value + "', '','USDT', '" + Convert.ToInt32(Session["Formno"]) + "','" + txtAmount.Text + "','" + billNo + "',";
+                    sql = "EXEC Sp_PaymentPetroCardINR '" + txtMemberId.Text + "','" + Hdnkitid.Value + "', '','USDT', '" + Convert.ToInt32(Session["Formno"]) + "','" + txtAmount.Text + "','" + billNo + "',";
                     sql += "'" + TxtMemberName.Text + "','" + TxtEmail.Text + "','" + Txtmonileno.Text + "','" + Txtpanno.Text + "','" + TxtDOB.Text + "','" + TxtAddress.Text + "','" + Txtpincode.Text + "',";
                     sql += "'" + ddlState.SelectedItem.Text + "','" + TxtCity.Text + "','" + TxtDistrict.Text + "','" + TxtWhatsappNo.Text + "','" + ddlWalletType.SelectedValue + "';";
                     DataTable dt = SqlHelper.ExecuteDataset(constr, CommandType.Text, sql).Tables[0];

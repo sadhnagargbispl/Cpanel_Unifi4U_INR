@@ -1,4 +1,4 @@
-<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
 
 <!DOCTYPE html>
 
@@ -76,8 +76,8 @@
     <link rel="stylesheet" type="text/css" href="assets/chartist.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/stylesmenu.css">
-    
-    
+
+
 
     <link href="assets/color.css" rel="stylesheet" type="text/css" />
     <%--     <script type="text/javascript">
@@ -293,7 +293,7 @@
                         <ul>
                             <li><a href="Mydirects.aspx">Level Wise Report</a></li>
                             <li><a href="Reftree.aspx">Referral Tree</a></li>
-                           <%-- <li><a href="SRefTree.aspx">Placement Tree</a></li>--%>
+                            <%-- <li><a href="SRefTree.aspx">Placement Tree</a></li>--%>
                             <li><a href="GroupbusinessDate.aspx">Date Wise Team Business</a></li>
                         </ul>
                     </li>
@@ -301,6 +301,8 @@
                         <ul>
                             <li><a href="Idactivation.aspx">New Activation </a></li>
                             <li><a href="myinvestment.aspx">My Purchase Detail</a></li>
+                            <li><a href="PETROCARDPurchase.aspx">Purchase Petro Card</a></li>
+                            <li><a href="PetroCardPurchaseReport.aspx">Petro Card Report</a></li>
 
                         </ul>
                     </li>

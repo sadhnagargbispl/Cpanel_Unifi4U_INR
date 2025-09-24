@@ -15,6 +15,7 @@ using System.Activities;
 using System.ServiceModel.Activities;
 using DocumentFormat.OpenXml.Presentation;
 using DocumentFormat.OpenXml.Spreadsheet;
+using System.Text.RegularExpressions;
 public partial class Newjoining1 : System.Web.UI.Page
 {
 
@@ -968,6 +969,14 @@ public partial class Newjoining1 : System.Web.UI.Page
             // Handle the exception
         }
     }
+    public static bool IsValidPAN(string pan)
+    {
+        if (string.IsNullOrWhiteSpace(pan))
+            return false;
+        // PAN format: 5 letters, 4 digits, 1 letter
+        string pattern = @"^[A-Z]{5}[0-9]{4}[A-Z]{1}$";
+        return Regex.IsMatch(pan.Trim().ToUpper(), pattern);
+    }
     protected void CmdSave_Click(object sender, EventArgs e)
     {
         try
@@ -1011,6 +1020,19 @@ public partial class Newjoining1 : System.Web.UI.Page
             {
                 ShowAlert("Please Enter Email Id.!");
                 return;
+            }
+            if (string.IsNullOrEmpty(txtPanNo.Text))
+            {
+                ShowAlert("Please Enter PAN No.!");
+                return;
+            }
+            if (txtPanNo.Text != "")
+            {
+                if (!IsValidPAN(txtPanNo.Text))
+                {
+                    ShowAlert("Invalid PAN Number! Please enter a valid PAN.");
+                    return;
+                }
             }
             // Check if Email is already registered
             string emailQuery = IsoStart + "SELECT COUNT(Email) FROM " + ObjDAL.dBName + "..M_Membermaster WHERE Email = '" + txtEMailId.Text.Trim() + "' " + IsoEnd;
@@ -1085,6 +1107,7 @@ public partial class Newjoining1 : System.Web.UI.Page
                 Txtusername.Enabled = false;
                 TxtSponsor.Enabled = false;
                 txtFrstNm.ReadOnly = true;
+                txtPanNo.Enabled = false;
                 ddlCountryNAme.Enabled = false;
                 TxtWalletaddress.Enabled = false;
                 divotp.Visible = true;
@@ -1138,6 +1161,7 @@ public partial class Newjoining1 : System.Web.UI.Page
             smtp.Send(myMessage);
             txtRefralId.Enabled = false;
             Txtusername.Enabled = false;
+            txtPanNo.Enabled = false;
             TxtSponsor.Enabled = false;
             txtFrstNm.ReadOnly = true;
             CmbType.Enabled = true;

@@ -43,7 +43,7 @@ public partial class PetroCardPurchaseReport : System.Web.UI.Page
         try
         {
             Dt = new DataTable();
-            query = "Exec GetPetroCartReport '" + Session["formno"] + "' ";
+            query = "Exec GetPetroCartReportINR '" + Session["formno"] + "' ";
             Dt = SqlHelper.ExecuteDataset(constr1, CommandType.Text, query).Tables[0];
             Session["ShopFund"] = Dt;
 

@@ -200,12 +200,12 @@
 
                                 </div>
 
-                                <div class="form-group">
+                                <div class="form-group" >
                                     <label class="control-label">
                                         Member Id<span style="color: Red; font-weight: bold; font-size: 1.4em">*</span></label>
 
-                                    <asp:TextBox ID="txtMemberId" runat="server" class="form-control validate[required]"
-                                        AutoPostBack="true" OnTextChanged="txtMemberId_TextChanged"></asp:TextBox>
+                                    <asp:TextBox ID="txtMemberId" runat="server" CssClass="form-control validate[required]"
+                                        AutoPostBack="true" OnTextChanged="txtMemberId_TextChanged" Enabled="false"></asp:TextBox>
                                     <asp:Label ID="lblFormno" runat="server" Visible="false"></asp:Label>
                                     <asp:HiddenField ID="hdnMacadrs" runat="server" />
                                     <asp:HiddenField ID="HdnTopupSeq" runat="server" />

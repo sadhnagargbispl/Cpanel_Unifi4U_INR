@@ -29,7 +29,7 @@
                                     <div class="col-lg-9 col-sm-8 col-12 order-lg-1 order-sm-1 order-2">
                                         <div class="clearfix rounded-3 mb-1">
                                             <h4 style="color: red;"><%#Eval("kitname")%></h4>
-                                            <h3 style="color: green;"><strong>$<%#Eval("kitamount")%> </strong></h3>
+                                            <h3 style="color: green;"><strong><%#Eval("kitamount")%> </strong></h3>
                                             <hr>
                                             <asp:Label ID="LblKitid" runat="server" Text='<%#Eval("kitid")%>' Visible="false"></asp:Label>
                                             <p style="margin-top: 10px;"><b>You can enjoy significant benefits on your Petro Card </b></p>

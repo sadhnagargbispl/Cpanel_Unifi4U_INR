@@ -697,14 +697,14 @@
                                                 <asp:Label ID="LblPanNoAvail" runat="server" Text="Payout will deduct 20%, If you not enter PAN NO."></asp:Label></span>
                                         </div>
                                     </div>
-                                    <div id="Div22" class="form-group greybt" runat="server" visible="false">
+                                    <div id="Div22" class="form-group greybt" runat="server" visible="true">
                                         <label class="control-label col-sm-2">
                                             PAN No.<span style="color: Red; font-weight: bold; font-size: 1.4em">*</span>
                                         </label>
-                                        <div class="col-sm-10">
-                                            <asp:TextBox ID="txtPanNo" RepeatDirection="Horizontal" CssClass="form-control validate[custom[panno]]"
-                                                runat="server" autocomplete="off"></asp:TextBox>
-                                        </div>
+
+                                        <asp:TextBox ID="txtPanNo" RepeatDirection="Horizontal" CssClass="form-control validate[required,custom[panno]]"
+                                            runat="server" autocomplete="off"></asp:TextBox>
+
                                     </div>
                                     <div id="dvname" runat="server" visible="false">
                                         <h4>Nominee Detail</h4>

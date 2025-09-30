@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -61,7 +61,7 @@ public partial class ViewRankBonus : System.Web.UI.Page
             string cond = "";
             string formno = "";
             DataTable Dt = new DataTable();
-            string strSql = objDAL.Isostart + " EXEC Sp_GetRankBonus '" + Session["formno"] + "','" + Request["Sessid"] + "' " + objDAL.IsoEnd;
+            string strSql = objDAL.Isostart + " EXEC Sp_GetRankINR '" + Session["formno"] + "','" + Request["Sessid"] + "' " + objDAL.IsoEnd;
             Dt = SqlHelper.ExecuteDataset(constr1, CommandType.Text, strSql).Tables[0];
             Session["PaidairdropData"] = Dt;
             if (Dt.Rows.Count > 0)

@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
 
 <!DOCTYPE html>
 
@@ -321,7 +321,7 @@
                     </li>
                     <li><a href="#">My Incentive</a>
                         <ul>
-                            <li><a href="#">Daily Payout Income</a></li>
+                            <li><a href="DailyBinaryIncome.aspx">Daily Payout Income</a></li>
                             <li><a href="RankReward.aspx">My Rank</a></li>
                         </ul>
                     </li>

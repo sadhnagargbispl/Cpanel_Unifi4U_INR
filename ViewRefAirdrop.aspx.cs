@@ -61,7 +61,7 @@ public partial class ViewRefAirdrop : System.Web.UI.Page
             string cond = "";
             string formno = "";
             DataTable Dt = new DataTable();
-            string strSql = objDAL.Isostart + " exec sp_GetDailyInsome '" + Session["formno"] + "','" + Request["Sessid"] + "' " + objDAL.IsoEnd;
+            string strSql = objDAL.Isostart + " exec sp_GetDailyINR '" + Session["formno"] + "','" + Request["Sessid"] + "' " + objDAL.IsoEnd;
             Dt = SqlHelper.ExecuteDataset(constr1, CommandType.Text, strSql).Tables[0];
             Session["PaidairdropData"] = Dt;
             if (Dt.Rows.Count > 0)

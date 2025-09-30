@@ -71,7 +71,7 @@ public partial class ViewTeamInfinity : System.Web.UI.Page
             DataSet Ds = new DataSet();
             string cond = "";
             string formno = "";
-            string strSql = objDAL.Isostart + " exec sp_GetLevelIncome '" + Session["formno"] + "','" + Request["Sessid"] + "' " + objDAL.IsoEnd;
+            string strSql = objDAL.Isostart + " exec sp_GetLevelIncomeINR '" + Session["formno"] + "','" + Request["Sessid"] + "' " + objDAL.IsoEnd;
             dt = SqlHelper.ExecuteDataset(constr1, CommandType.Text, strSql).Tables[0];
             Session["GDatalevel"] = dt;
             if (dt.Rows.Count > 0)

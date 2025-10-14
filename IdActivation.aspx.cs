@@ -97,28 +97,28 @@ public partial class Idactivation : System.Web.UI.Page
                     ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Login Error", scrName, false);
                     return string.Empty;
                 }
-                else if (dt.Rows[0]["INRActiveStatus"].ToString() == "N")
-                {
-                    TxtMemberName.Text = dt.Rows[0]["memname"].ToString();
-                    HdnMemberMacAdrs.Value = dt.Rows[0]["MacAdrs"].ToString();
-                    HdnMemberTopupseq.Value = dt.Rows[0]["Topupseq"].ToString();
-                    MemberStatus.Value = dt.Rows[0]["INRActiveStatus"].ToString();
-                    hdnFormno.Value = dt.Rows[0]["Formno"].ToString();
-                    hdnemail.Value = dt.Rows[0]["Email"].ToString();
-                    LblMobile.Text = string.Empty;
-                    return "OK";
-                }
-                else if (dt.Rows[0]["INRActiveStatus"].ToString() == "Y")
-                {
-                    txtMemberId.Text = string.Empty;
-                    TxtMemberName.Text = string.Empty;
-                    HdnMemberMacAdrs.Value = string.Empty;
-                    HdnMemberTopupseq.Value = string.Empty;
+                //else if (dt.Rows[0]["INRActiveStatus"].ToString() == "N")
+                //{
+                //    TxtMemberName.Text = dt.Rows[0]["memname"].ToString();
+                //    HdnMemberMacAdrs.Value = dt.Rows[0]["MacAdrs"].ToString();
+                //    HdnMemberTopupseq.Value = dt.Rows[0]["Topupseq"].ToString();
+                //    MemberStatus.Value = dt.Rows[0]["INRActiveStatus"].ToString();
+                //    hdnFormno.Value = dt.Rows[0]["Formno"].ToString();
+                //    hdnemail.Value = dt.Rows[0]["Email"].ToString();
+                //    LblMobile.Text = string.Empty;
+                //    return "OK";
+                //}
+                //else if (dt.Rows[0]["INRActiveStatus"].ToString() == "Y")
+                //{
+                //    txtMemberId.Text = string.Empty;
+                //    TxtMemberName.Text = string.Empty;
+                //    HdnMemberMacAdrs.Value = string.Empty;
+                //    HdnMemberTopupseq.Value = string.Empty;
 
-                    string scrName = "<SCRIPT language='javascript'>alert('This Id already activate.');</SCRIPT>";
-                    ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Login Error", scrName, false);
-                    return string.Empty;
-                }
+                //    string scrName = "<SCRIPT language='javascript'>alert('This Id already activate.');</SCRIPT>";
+                //    ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Login Error", scrName, false);
+                //    return string.Empty;
+                //}
                 else
                 {
                     TxtMemberName.Text = dt.Rows[0]["memname"].ToString();

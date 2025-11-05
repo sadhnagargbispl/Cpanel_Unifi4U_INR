@@ -1490,7 +1490,7 @@ public partial class Newjoining1 : System.Web.UI.Page
          "'" + InVoiceNo + "', '" + Session["RP"] + "', '" + HostIp + "', " + Convert.ToInt32(DdlPaymode.SelectedValue) + ", " +
          "'" + (DdlPaymode.SelectedItem.Text.ToUpper()) + "', '" + ClearInject(TxtDDNo.Text) + "', '0', '" + ClearInject(TxtIssueBank.Text.ToUpper()) + "', " +
          "'" + (TxtDDDate.Text) + "', '" + ClearInject(TxtIssueBranch.Text) + "', 'N', '" + ClearInject(TxtAAdhar1.Text) + "', " +
-         "'" + ClearInject(TxtAadhar2.Text) + "', '" + ClearInject(TxtAadhar3.Text) + "', '" + Session["TransIDJoin"] + "', '" + ddlMobileNAme.Text + "'," + Convert.ToInt32(Session["Kitid"]) + ",'" + Session["JoinStatus"] + "')";
+         "'" + ClearInject(TxtAadhar2.Text) + "', '" + ClearInject(TxtAadhar3.Text) + "', 'INR', '" + ddlMobileNAme.Text + "'," + Convert.ToInt32(Session["Kitid"]) + ",'" + Session["JoinStatus"] + "')";
 
                             int isOk = 0;
                             int retryqry = 0;

@@ -57,6 +57,7 @@ public partial class PetroCardFinalPurchase : System.Web.UI.Page
                     txtMemberId.Text = Session["IdNo"] != null ? Session["IdNo"].ToString() : string.Empty;
                     GetName();
                     FillState();
+                    FillGender();
                     Session["FinalWithdrawAmount"] = null;
                     Session["ReqAmount"] = null;
                     Session["OtpCount"] = 0;
@@ -168,6 +169,26 @@ public partial class PetroCardFinalPurchase : System.Web.UI.Page
         catch (Exception ex)
         {
             throw new Exception(ex.Message);
+        }
+    }
+    private void FillGender()
+    {
+        try
+        {
+            var obj = new DAL();
+            string query = ObjDal.Isostart + "Exec Sp_getGender " + ObjDal.IsoEnd;
+            DataTable dt = SqlHelper.ExecuteDataset(constr1, CommandType.Text, query).Tables[0];
+            if (dt.Rows.Count > 0)
+            {
+                DDlGender.DataSource = dt;
+                DDlGender.DataValueField = "GenderCode";
+                DDlGender.DataTextField = "GenderName";
+                DDlGender.DataBind();
+            }
+        }
+        catch (Exception ex)
+        {
+
         }
     }
     private void FillState()
@@ -334,6 +355,11 @@ public partial class PetroCardFinalPurchase : System.Web.UI.Page
             ScriptManager.RegisterStartupScript(this, this.GetType(), "Key", "alert('You do not have enough balance for Purchasing.');location.replace('Index.aspx');", true);
             return;
         }
+        if (DDlGender.SelectedValue == "Z")
+        {
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "Key", "alert('Please Select Gender.!');", true);
+            return;
+        }
         if (TxtEmail.Text == "")
         {
             string scrname = "<SCRIPT language='javascript'>alert('Please Enter Email Id.!');</SCRIPT>";
@@ -455,7 +481,7 @@ public partial class PetroCardFinalPurchase : System.Web.UI.Page
                     string sql = "";
                     sql = "EXEC Sp_PaymentPetroCardINR '" + txtMemberId.Text + "','" + Hdnkitid.Value + "', '','USDT', '" + Convert.ToInt32(Session["Formno"]) + "','" + txtAmount.Text + "','" + billNo + "',";
                     sql += "'" + TxtMemberName.Text + "','" + TxtEmail.Text + "','" + Txtmonileno.Text + "','" + Txtpanno.Text + "','" + TxtDOB.Text + "','" + TxtAddress.Text + "','" + Txtpincode.Text + "',";
-                    sql += "'" + ddlState.SelectedItem.Text + "','" + TxtCity.Text + "','" + TxtDistrict.Text + "','" + TxtWhatsappNo.Text + "','" + ddlWalletType.SelectedValue + "';";
+                    sql += "'" + ddlState.SelectedItem.Text + "','" + TxtCity.Text + "','" + TxtDistrict.Text + "','" + TxtWhatsappNo.Text + "','" + ddlWalletType.SelectedValue + "','" + DDlGender.SelectedValue + "';";
                     DataTable dt = SqlHelper.ExecuteDataset(constr, CommandType.Text, sql).Tables[0];
                     if (dt.Rows[0]["Result"].ToString().ToUpper() == "SUCCESS")
                     {

@@ -185,6 +185,12 @@
                                     <asp:AsyncPostBackTrigger ControlID="txtMemberId" EventName="TextChanged" />
                                 </Triggers>
                             </asp:UpdatePanel>
+                            <div class="form-group ">
+                                <label>
+                                    Gender <span style="color: Red; font-weight: bold; font-size: 1.4em">*</span></label>
+                                <asp:DropDownList ID="DDlGender" runat="server" CssClass="form-control">
+                                </asp:DropDownList>
+                            </div>
                             <div class="form-group">
                                 <label for="inputdefault">
                                     Card Amount <span style="color: Red; font-weight: bold; font-size: 1.4em">*</span></label>
@@ -213,10 +219,9 @@
                                 <asp:TextBox ID="TxtDOB" runat="server" CssClass="form-control"></asp:TextBox>
                                 <ajaxToolkit:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="TxtDOB"
                                     Format="dd-MMM-yyyy"></ajaxToolkit:CalendarExtender>
-                                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TxtDOB" ErrorMessage="Invalid Date" 
-                                 Font-Names="arial" Font-Size="10px" ForeColor ="Red" SetFocusOnError="True" 
-                                 ValidationExpression="^(?:((31-(Jan|Mar|May|Jul|Aug|Oct|Dec))|((([0-2]\d)|30)-(Jan|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec))|(([01]\d|2[0-8])-Feb))|(29-Feb(?=-((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00)))))-((1[6-9]|[2-9]\d)\d{2})$"
-                           ></asp:RegularExpressionValidator>
+                                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TxtDOB" ErrorMessage="Invalid Date"
+                                    Font-Names="arial" Font-Size="10px" ForeColor="Red" SetFocusOnError="True"
+                                    ValidationExpression="^(?:((31-(Jan|Mar|May|Jul|Aug|Oct|Dec))|((([0-2]\d)|30)-(Jan|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec))|(([01]\d|2[0-8])-Feb))|(29-Feb(?=-((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00)))))-((1[6-9]|[2-9]\d)\d{2})$"></asp:RegularExpressionValidator>
                             </div>
                             <div class="form-group ">
                                 <label for="inputdefault">Shipping Address <span style="color: Red; font-weight: bold; font-size: 1.4em">*</span></label>

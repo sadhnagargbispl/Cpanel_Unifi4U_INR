@@ -119,7 +119,7 @@ public partial class PETROCARDPurchase : System.Web.UI.Page
             string Amount = txtAmount.Text;
             string kitid = lblKitid.Text;
 
-            string str = " select count(*) as Cnt from " + objDal.dBName + "..repurchincomeINR where formno = '" + Convert.ToInt32(Session["Formno"]) + "' AND kitid in (2,3,4)";
+            string str = " select count(*) as Cnt from " + objDal.dBName + "..repurchincomeINR where formno = '" + Convert.ToInt32(Session["Formno"]) + "' AND kitid in (10002,10003,10004)";
             DataTable dts = new DataTable();
             dts = SqlHelper.ExecuteDataset(ConfigurationManager.ConnectionStrings["constr1"].ConnectionString, CommandType.Text, str).Tables[0];
             if (dts.Rows.Count > 0)

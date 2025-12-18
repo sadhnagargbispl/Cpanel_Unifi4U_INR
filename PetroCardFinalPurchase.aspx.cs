@@ -65,7 +65,7 @@ public partial class PetroCardFinalPurchase : System.Web.UI.Page
                     Session["Retry"] = null;
                     Session["OTP_"] = null;
                     HdnCheckTrnns.Value = GenerateRandomString(6);
-                    string str = " select count(*) as Cnt from " + ObjDal.dBName + "..repurchincomeINR where formno = '" + Convert.ToInt32(Session["Formno"]) + "' AND kitid in (2,3,4)";
+                    string str = " select count(*) as Cnt from " + ObjDal.dBName + "..repurchincomeINR where formno = '" + Convert.ToInt32(Session["Formno"]) + "' AND kitid in (10002,10003,10004)";
                     DataTable dts = new DataTable();
                     dts = SqlHelper.ExecuteDataset(constr1, CommandType.Text, str).Tables[0];
                     if (dts.Rows.Count > 0)
@@ -432,7 +432,7 @@ public partial class PetroCardFinalPurchase : System.Web.UI.Page
             ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Login Error", scrname, false);
             return;
         }
-        string str = " select count(*) as Cnt from " + ObjDal.dBName + "..repurchincomeINR where formno = '" + Convert.ToInt32(Session["Formno"]) + "' AND kitid in (2,3,4)";
+        string str = " select count(*) as Cnt from " + ObjDal.dBName + "..repurchincomeINR where formno = '" + Convert.ToInt32(Session["Formno"]) + "' AND kitid in (10002,10003,10004)";
         DataTable dts = new DataTable();
         dts = SqlHelper.ExecuteDataset(constr1, CommandType.Text, str).Tables[0];
         if (dts.Rows.Count > 0)
